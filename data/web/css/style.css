@@ -1,0 +1,288 @@
+/*
+ * Copyright (c) 2017 by Peter de Vocht
+ *
+ * All rights reserved. No part of this publication may be reproduced, distributed, or
+ * transmitted in any form or by any means, including photocopying, recording, or other
+ * electronic or mechanical methods, without the prior written permission of the publisher,
+ * except in the case of brief quotations embodied in critical reviews and certain other
+ * noncommercial uses permitted by copyright law.
+ *
+ */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	color: #999999;
+	font-family: 'Avenir' sans-serif;
+}
+.subheading {
+	color: #d00040;
+}
+.hero, .container {
+	overflow: hidden;
+}
+.hero-left{
+	padding-top: 10px;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+}
+nav ul {
+	width: 100%;
+	display: flex;
+	-webkit-display: flex;
+	margin-bottom: 70px;
+}
+nav ul li {
+	/*text-align: center; */
+	display: inline;
+	flex: 1;
+	-webkit-flex: 1;
+}
+nav ul li a {
+	color: #0e264d;
+	font-size: 12px;
+	/*font-weight: 700;*/
+	text-decoration: none;
+	transition: all .3s;
+	text-align: center;
+	display: block;
+}
+nav ul li a:hover {
+	color: #ea5a5a;
+	text-decoration: none;
+	transition: all .3s;
+}
+.hero-logo {
+	width: 30%;
+}
+.hero-right {
+	display: none
+}
+.hero-right-bg {
+	height: 100%;
+	width: 100%;
+	background: #d00040;
+	background: linear-gradient(to bottom right, #d00040, #ea5a5a);
+	position: absolute;
+}
+.hero-right .laptop {
+	position: absolute;
+	bottom: -130px;
+	left: -130px;
+}
+.hero-right .network {
+	position: absolute;
+	opacity: .3;
+	left: 0;
+	bottom: 0;
+}
+.hero-right-mobile {
+	display: none;
+	height: 50%;
+	position: relative;
+	display: block;
+}
+.hero-right-bg-mobile {
+	height: 70%;
+	width: 100%;
+	left: 0;
+	background: #d00040;
+	background: linear-gradient(to bottom right, #d00040, #ea5a5a);
+	position: absolute;
+}
+.hero-right-mobile .network-mobile {
+	position: absolute;
+	opacity: .3;
+	width: 80%;
+	left: 0;
+	bottom: 0;
+}
+.hero-right-mobile .laptop-mobile {
+	position: relative;
+	top: -40px;
+	left: 0px;
+}
+.scroll {
+		display: none;
+	}
+.learn-more {
+	font-size: 12px;
+	padding: .8em 2em;
+	color: #0e264d;
+	text-decoration: none;
+	border-radius: 3em;
+	border: 2px solid #0e264d;
+	transition: all .5s;
+}
+.learn-more:hover {
+	background: #0e264d;
+	color: #fff;
+	text-decoration: none;
+	transition: all .5s;
+}
+.kai-search {
+	font-size: 12px;
+	padding: .8em 2em;
+	color: #ea5a5a;
+	text-decoration: none;
+	border-radius: 3em;
+	border: 2px solid #ea5a5a;
+	transition: all .5s;
+}
+.kai-search:hover {
+	background: #ea5a5a;
+	color: #fff;
+	text-decoration: none;
+	transition: all .5s;
+}
+.kai-button {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.intro {
+	background: #f3f3f3;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+span {
+	color: #ea5a5a;
+	font-size: 50px;
+}
+.about {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	box-sizing: border-box;
+}
+.about-left {
+	display: none;
+	/*height: 100%;*/
+}
+.about-left-mobile {
+	display: none;
+	position: relative;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #0e264d;
+	background: linear-gradient(to bottom right, #0e264d, #1a3766);
+	border-radius: 0%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	clear: both;
+}
+.about-right {
+	padding-bottom: 50px;
+}
+.system {
+	background: #f3f3f3;
+	color: #fff;
+	background: url("../images/bg1.jpg");
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	box-sizing: border-box;
+}
+.system .system-image {
+	margin-top: 20px;
+}
+.contact {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.coming-soon {
+	background: #ea5a5a;
+	width: 100%;
+	height: 200px;
+	border-radius: 50%;
+}
+.contact-details {
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.pull-right { 
+		float: left !important;
+	}
+.mail, .phone {
+	min-height: 120px;
+}
+.copy {
+	text-align: center;
+	font-size: 10px;
+	color: #ea5a5a;
+	background: #f3f3f3;
+	padding-top: 20px;
+}
+.mobile-button {
+		display: block !important;
+		padding-bottom: 50px;
+	}
+
+
+@media (min-width: 768px) {
+	.mail, .phone {
+		min-height: 50px;
+	}
+	.about-left-mobile {
+		border-radius: 50%;
+	}
+	.about-right {
+		padding-bottom: 0px;
+	}
+}
+
+@media (min-width: 992px) {
+	nav ul li a {
+	text-align: left;
+	}
+	.hero, .container {
+		height: 100%;
+	}
+	.hero-logo {
+		width: 60%;
+	}
+	.hero-main {
+		height: 90%;
+		margin: 0 0;
+	}
+	.hero-left{
+		padding-bottom: 100px;
+	}	
+	.hero-right {
+		height: 75%;
+		position: relative;
+		display: block;
+	}
+	.about-left {
+		display: block;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: #0e264d;
+		background: linear-gradient(to bottom right, #0e264d, #1a3766);
+		border-radius: 50%;
+	}
+	.hero-right-mobile, .about-left-mobile {
+		display: none;
+	}
+	.scroll {
+		display: block;
+		clear: both;
+	}
+	.pull-right { 
+		float: right !important;
+	}
+	.mobile-button {
+		display: none !important;
+	}
+	
+	
+}
+
+
+

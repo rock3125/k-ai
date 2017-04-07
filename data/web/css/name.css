@@ -1,0 +1,220 @@
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 85%;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 10px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown, .keywordsearch, .home-logo {
+        clear: none;
+    }
+    .dropdown {
+        margin-bottom: 0;
+    }
+
+    .changingword {
+        font-size: 25px;
+    }
+}
+
+html,
+body {
+@include bg-gradient-l2r(#d00040, #ea5a5a);
+    background-image: url("../images/bg1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-offset {
+    margin-top: 50px;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+.header-logo {
+    width: 100%;
+
+}
+.changingword {
+    color: #fff;
+    font-size: 18px;
+}
+.home-logo {
+    margin-bottom: 50px;
+    clear: both;
+}
+.container-fluid {
+    padding: 0;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.viki-background-white {
+    background: #ffffff;
+    color: #777777;
+    min-height: 80%;
+}
+
+
+/*=== 4. Main Form ===*/
+.login-form-1 {
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+}
+.main-login-form {
+    position: relative;
+}
+
+.login-form-1 .form-control::-webkit-input-placeholder {
+    color: #999999;
+}
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+    color: #999999;
+}
+.login-form-1 .form-group {
+    margin-bottom: 40px;
+}
+.login-form-1 .form-group:last-child {
+    border-bottom: 0;
+}
+.login-group {
+    background: #ffffff;
+    color: #999999;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+.login-group-checkbox {
+    padding: 5px 0;
+}
+/*=== 5. Login Button ===*/
+.login-form-1 .login-button {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    background: #0e264d;
+    color: #fff;
+    padding: 11px 0;
+    width: 100px;
+    height: 100px;
+    margin-top: -25px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    transition: all ease-in-out 500ms;
+}
+.login-form-1 .login-button:hover {
+    transform: rotate(450deg);
+}
+.login-form-1 .login-button.clicked {
+    color: #555555;
+}
+.login-form-1 .login-button.clicked:hover {
+    transform: none;
+}
+.login-form-1 .login-button.clicked.success {
+    color: #2ecc71;
+}
+.login-form-1 .login-button.clicked.error {
+    color: #e74c3c;
+}
+
+/*=== 7. Form - Main Message ===*/
+.login-form-main-message {
+    background: #ffffff;
+    color: #999999;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    height: 0;
+    padding: 0 20px 0 17px;
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+}
+.login-form-main-message.show {
+    height: auto;
+    opacity: 1;
+    padding: 10px 20px 10px 17px;
+}
+.login-form-main-message.success {
+    border-left-color: #2ecc71;
+}
+.login-form-main-message.error {
+    border-left-color: #e74c3c;
+}
+
+.name-class {
+    color: #eee;
+}
+
+.modal-red-header {
+    background-color: #ff5353;
+    color: #fff;
+}
+
+.modal-blue-header {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.modal-offset-top {
+    margin-top: 50px;
+}
+
+.modal-create-offset-top {
+    margin-top: 100px;
+}
+
+.text-kaisearch, .text-kaisearch:hover {
+    border-radius: 0;
+    border: 0;
+    width: 400px;
+    box-shadow: none;
+    border-bottom: 1.5px solid #0e264d;
+    color: #0e264d;
+    font-size: 16px;
+    outline: none !important;
+}
+.text-kaisearch:focus, .text-kaisearch:active {
+    border-bottom: 1.5px solid #0e264d;
+}
+input:focus, input, input:active, button, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.text-kaisearch::-webkit-input-placeholder {
+    color: #999999;
+}
+.text-kaisearch:-moz-placeholder,
+.text-kaisearch::-moz-placeholder,
+.text-kaisearch:-ms-input-placeholder {
+    color: #999999;
+}
+

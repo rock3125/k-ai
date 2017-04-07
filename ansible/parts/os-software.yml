@@ -1,0 +1,26 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+
+# install python3 required packages and pip
+  - name: Install Python3 dev and other OS packages as required
+    shell: apt install -y python3-dev python3-pip htop iotop graphviz libasound-dev portaudio19-dev
+
+# install pip
+  - name: Install pip for Python3
+    shell: easy_install3 pip
+
+# upgrade pip on Python3
+  - name: Upgrading Python3 pip
+    shell: python3 -m pip install --upgrade pip
+
+# install python3 required packages
+#  - name: Install Python3 pip packages
+#    shell: python3 -m pip install --upgrade nltk scipy gunicorn gevent flask flask-cors spacy keras sumy h5py tensorflow pyaudio SpeechRecognition gTTS

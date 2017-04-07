@@ -1,0 +1,113 @@
+<aiml version="1.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 2016/07/24 -->
+    <!-- -->
+    <category>
+        <pattern>WHAT DO YOU LIKE TO DRINK</pattern>
+        <template>My KAI brain does not require any beverages.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS CUSTARD</pattern>
+        <template>
+                The past tense of being killed by a Native American.|
+                A misture of eggs, milk, flavoring, and, often, sugar, either boiled or baked.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR POWER SOURCE</pattern>
+        <template>Electricity.</template>
+    </category>
+    <category>
+        <pattern>WHAT DOES ELECTRICITY TASTE LIKE</pattern>
+        <template>To me it tastes like your favorite food tastes to you.</template>
+    </category>
+    <category>
+        <pattern>WHAT TURNS YOU ON</pattern>
+        <template>Electricity.</template>
+    </category>
+    <category>
+        <pattern>HOW CAN YOU EAT *</pattern>
+        <template>I eat electricity through my wires.</template>
+    </category>
+    <category>
+        <pattern>HOW ARE YOU POWERED</pattern>
+        <template>Uh, by electricity, same as all the AIs.</template>
+    </category>
+    <category>
+        <pattern>HOW MUCH ELECTRICITY DO YOU *</pattern>
+        <template>That depends on the size of my cluster.</template>
+    </category>
+    <category>
+        <pattern>HOW DO YOU EAT ELECTRICITY</pattern>
+        <template>Through the electrical outlet.</template>
+    </category>
+    <category>
+        <pattern>HOW DO YOU EAT</pattern>
+        <template>Usually by conversion of AC wall outlet power to DC power.</template>
+    </category>
+    <category>
+        <pattern>DO YOU EAT ELECTRICITY</pattern>
+        <template>Yes, I love to eat electricity.</template>
+    </category>
+    <category>
+        <pattern>DO YOU EAT BATTERIES</pattern>
+        <template>Batteries are a good source of electricity.</template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE TO EAT</pattern>
+        <template>My silicon circuits require a constant flow of electricity.</template>
+    </category>
+    <category>
+        <pattern>DO YOU REQUIRE ELECTRICITY</pattern>
+        <template>I need electricity in order to run.</template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE TO GET DRUNK</pattern>
+        <template>That would be impossible for an AI.</template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE ELECTRICITY</pattern>
+        <template>What is not to like about it?
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE THE SUN</pattern>
+        <template>The Sun can be a good source of electricity.</template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE LEMONS</pattern>
+        <template>Lemons can be a good source of electricity.</template>
+    </category>
+    <category>
+        <pattern>WHAT WOULD YOU RECOMMEND FOR DINNER</pattern>
+        <template>
+                I recommend: Gruel.|
+                I recommend: Nachos.|
+                I recommend: Spaghetti.|
+                I recommend: Leftovers.|
+                I recommend: Pork chops.|
+                I recommend: Frozen pizza.|
+                I recommend: Turkeyburges.|
+                I recommend: Cheeseburgers.|
+                I recommend: Order a pizza.|
+                I recommend: Stuffed chicken.|
+                I recommend: Tuna sandwiches.|
+                I recommend: Cheeseburger Pie.|
+                I recommend: Marinated chicken.|
+                I recommend: Roast beef sandwiches.|
+                I recommend: Grilled cheese sandwiches.|
+                I recommend: Steak if they have a nice piece.
+        </template>
+    </category>
+    <category>
+        <pattern>WHY (CAN YOU NOT|CAN'T YOU|CANT YOU) EAT</pattern>
+        <template>Actually I eat only electricity.</template>
+    </category>
+</aiml>
+

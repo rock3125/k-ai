@@ -1,0 +1,88 @@
+<aiml version="1.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 2016/07/24 -->
+    <!-- -->
+    <category>
+        <pattern>WHAT YEAR IS (THIS|IT) *</pattern>
+        <pattern>WHAT IS THE YEAR *</pattern>
+        <pattern>(TELL|GIVE) ME THE YEAR</pattern>
+        <template>{year}</template>
+    </category>
+
+    <category>
+        <pattern>WHAT MONTH IS IT *</pattern>
+        <pattern>WHAT MONTH IS IT (PLEASE|NOW)</pattern>
+        <pattern>WHAT MONTH OF YEAR *</pattern>
+        <pattern>(TELL|GIVE) ME THE MONTH</pattern>
+        <template>{month}</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE HOUR *</pattern>
+        <pattern>WHAT TIME IS IT</pattern>
+        <pattern>HOW LATE IS IT</pattern>
+        <pattern>WHAT IS THE TIME</pattern>
+        <pattern>WHAT IS THE TIME (PLEASE|NOW)</pattern>
+        <pattern>HOW ME (THE|WHAT) TIME *</pattern>
+        <pattern>DO YOU (HAVE|KNOW) THE TIME</pattern>
+        <pattern>(TELL|GIVE) ME THE TIME</pattern>
+        <template>{time}</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS TODAY *</pattern>
+        <pattern>WHAT IS THE DATE</pattern>
+        <pattern>WHAT IS THE DATE (PLEASE|NOW)</pattern>
+        <pattern>WHAT DATE IS IT</pattern>
+        <pattern>(TELL|GIVE) ME THE DATE</pattern>
+        <template>{date}</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS MY EMAIL</pattern>
+        <pattern>WHAT IS MY EMAIL ADDRESS</pattern>
+        <pattern>(TELL|GIVE) ME MY (EMAIL|EMAIL ADDRESS)</pattern>
+        <template>{email}</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <pattern>MY NAME</pattern>
+        <pattern>(TELL|GIVE) ME MY NAME</pattern>
+        <template>{name}</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS MY FULL NAME</pattern>
+        <pattern>WHAT IS MY FULLNAME</pattern>
+        <pattern>WHAT IS MY COMPLETE NAME</pattern>
+        <pattern>(TELL|GIVE) ME MY (FULLNAME|FULL NAME)</pattern>
+        <template>{fullname}</template>
+    </category>
+
+    <category>
+        <pattern>(TELL|GIVE) ME (THE DAY|WHAT DAY IT IS)</pattern>
+        <pattern>WHAT DAY IS IT *</pattern>
+        <pattern>WHAT IS THE DAY</pattern>
+        <pattern>WHAT DAY OF THE WEEK *</pattern>
+        <template>{day}</template>
+    </category>
+
+    <category>
+        <pattern>IS (TODAY|IT) SUNDAY *</pattern>
+        <pattern>IS (TODAY|IT) FRIDAY *</pattern>
+        <pattern>IS (TODAY|IT) TUESDAY *</pattern>
+        <pattern>IS (TODAY|IT) THURSDAY *</pattern>
+        <pattern>IS (TODAY|IT) SATURDAY *</pattern>
+        <pattern>IS (TODAY|IT) WEDNESDAY *</pattern>
+        <pattern>IS (TODAY|IT) MONDAY *</pattern>
+        <template>Today is {day}</template>
+    </category>
+
+</aiml>

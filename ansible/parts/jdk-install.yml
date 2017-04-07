@@ -1,0 +1,48 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# JDK
+#
+  - name: testing JDK 8 file existence
+    stat: path=/import/software/{{ jdk_file }}
+    register: file_exists
+
+  - name: download JDK 8 (if dne)
+    shell: scp {{ soft_base }}/{{ jdk_file }} /import/software/
+    when: file_exists.stat.exists == False
+
+  - name: testing JDK 8 installation
+    stat: path={{ jdk_dir }}/bin/java
+    register: jdk_installed
+
+  - name: install jdk-8-linux-x64 from a local file
+    shell: tar xvzf /import/software/{{ jdk_file }}
+    args:
+      chdir: /opt/
+    when: jdk_installed.stat.exists == False
+
+  - name: copy jdk unlimited
+    shell: scp {{ soft_base }}/UnlimitedJCEPolicyJDK8/* /import/software/
+    when: jdk_installed.stat.exists == False
+
+  - name: env set JAVA_HOME
+    lineinfile: dest=/etc/profile state=present regexp='export.JAVA_HOME' line='export JAVA_HOME={{ jdk_dir }}'
+    when: jdk_installed.stat.exists == False
+
+  - name: env set CASSANDRA_HOME
+    lineinfile: dest=/etc/profile state=present regexp='export.CASSANDRA_HOME' line='export CASSANDRA_HOME={{ cass_dir }}'
+    when: jdk_installed.stat.exists == False
+
+  - name: env set new path
+    lineinfile: dest=/etc/profile state=present regexp='export.PATH=\$PATH' line='export PATH=$PATH:$JAVA_HOME/bin:$CASSANDRA_HOME/bin'
+    when: jdk_installed.stat.exists == False
+
+

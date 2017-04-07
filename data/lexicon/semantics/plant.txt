@@ -1,0 +1,907 @@
+Acalypha virginica:plant
+Acocanthera oblongifolia:plant
+Acocanthera oppositifolia:plant
+Acocanthera spectabilis:plant
+Acocanthera venenata:plant
+Adam's apple:plant
+Adenium multiflorum:plant
+Adenium obesum:plant
+African hemp:plant
+American angelica tree:plant
+American cranberry bush:plant
+American spicebush:plant
+Anadenanthera colubrina:plant
+Anagyris foetida:plant
+Anthyllis barba-jovis:plant
+Apalachicola rosemary:plant
+Aralia elata:plant
+Aralia spinosa:plant
+Aralia stipulata:plant
+Ardisia crenata:plant
+Ardisia escallonoides:plant
+Ardisia paniculata:plant
+Argyroxiphium sandwicense:plant
+Aristotelia racemosa:plant
+Aristotelia serrata:plant
+Aspalathus cedcarbergensis:plant
+Aspalathus linearis:plant
+Aspergillus fumigatus:plant
+Astroloma humifusum:plant
+Australian heath:plant
+Baccharis halimifolia:plant
+Baccharis pilularis:plant
+Baccharis viminea:plant
+Bassia scoparia:plant
+Batis maritima:plant
+Bauhinia monandra:plant
+Benjamin bush:plant
+Benzoin odoriferum:plant
+Biscutalla laevigata:plant
+Brassaia actinophylla:plant
+Brazilian potato tree:plant
+Brugmansia arborea:plant
+Brugmansia sanguinea:plant
+Brugmansia suaveolens:plant
+Brunfelsia americana:plant
+Caesalpinia decapetala:plant
+Caesalpinia sepiaria:plant
+Cajanus cajan:plant
+California beauty:plant
+California redbud:plant
+Camellia sinensis:plant
+Canella-alba:plant
+Canella winterana:plant
+Catha edulis:plant
+Caulophyllum thalictrioides:plant
+Caulophyllum thalictroides:plant
+Ceratostomella ulmi:plant
+Cercis occidentalis:plant
+Cercospora kopkei:plant
+Cestrum diurnum:plant
+Cestrum nocturnum:plant
+Chamaecytisus palmensis:plant
+Chamaedaphne calyculata:plant
+Chile hazel:plant
+Chile nut:plant
+Chilean firebush:plant
+Chilean flameflower:plant
+Chilean hazelnut:plant
+Chilean nut:plant
+Chilean rimu:plant
+Chilopsis linearis:plant
+Chimonanthus praecox:plant
+Chinese angelica:plant
+Chinese angelica tree:plant
+Chinese black mushroom:plant
+Chinese holly:plant
+Chiococca alba:plant
+Christ's-thorn:plant
+Christmas berry:plant
+Christmasberry:plant
+Chrysolepis sempervirens:plant
+Cineraria maritima:plant
+Claviceps purpurea:plant
+Clethra alnifolia:plant
+Codariocalyx motorius:plant
+Codiaeum variegatum:plant
+Colutea arborescens:plant
+Combretum bracteosum:plant
+Comptonia asplenifolia:plant
+Comptonia peregrina:plant
+Conradina glabra:plant
+Cordyline terminalis:plant
+Corticium salmonicolor:plant
+Corticium solani:plant
+Croton tiglium:plant
+Cycloloma atriplicifolium:plant
+Cyrilla racemiflora:plant
+Cytesis proliferus:plant
+Cytisus ramentaceus:plant
+Dacridium laxifolius:plant
+Dalea spinosa:plant
+Dalmatian laburnum:plant
+Datura arborea:plant
+Datura sanguinea:plant
+Datura suaveolens:plant
+Desmodium gyrans:plant
+Desmodium motorium:plant
+Diervilla lonicera:plant
+Diervilla sessilifolia:plant
+Dirca palustris:plant
+Dovyalis caffra:plant
+Dutch elm fungus:plant
+East Indian rosebay:plant
+Embothrium coccineum:plant
+Epigaea repens:plant
+Eriodictyon californicum:plant
+Eryngium maritimum:plant
+Eryngium yuccifolium:plant
+Erythroxylon coca:plant
+Erythroxylon truxiuense:plant
+Euonymus americanus:plant
+Euonymus atropurpureus:plant
+European cranberry bush:plant
+European cranberrybush:plant
+Fabiana imbricata:plant
+Flacourtia indica:plant
+Fomes igniarius:plant
+Francoa ramosa:plant
+Gastroboletus scabrosus:plant
+Gastroboletus turbinatus:plant
+Gastrocybe lateritia:plant
+Gaultheria shallon:plant
+Genista raetam:plant
+Geoffroea decorticans:plant
+Georgia bark:plant
+German tamarisk:plant
+Graptophyllum pictum:plant
+Grewia asiatica:plant
+Grifola frondosa:plant
+Griselinia littoralis:plant
+Griselinia lucida:plant
+Guevina avellana:plant
+Guevina heterophylla:plant
+Hakea laurina:plant
+Hakea leucoptera:plant
+Hakea lissosperma:plant
+Halimodendron argenteum:plant
+Halimodendron halodendron:plant
+Hazardia cana:plant
+Hercules'-club:plant
+Hermannia verticillata:plant
+Heteromeles arbutifolia:plant
+Hibiscus farragei:plant
+Himalaya honeysuckle:plant
+Ilex cornuta:plant
+Indian currant:plant
+Indian rhododendron:plant
+Indigofera tinctoria:plant
+Irish gorse:plant
+Jacquinia armillaris:plant
+Jacquinia keyensis:plant
+Japan allspice:plant
+Japanese allspice:plant
+Japanese andromeda:plant
+Japanese angelica tree:plant
+Jerusalem thorn:plant
+Juneberry:plant
+Jupiter's beard:plant
+Kiggelaria africana:plant
+Kochia scoparia:plant
+Kolkwitzia amabilis:plant
+Labrador tea:plant
+Lagerstroemia indica:plant
+Lambertia formosa:plant
+Larrea tridentata:plant
+Lavatera arborea:plant
+Ledum groenlandicum:plant
+Ledum palustre:plant
+Leiophyllum buxifolium:plant
+Leitneria floridana:plant
+Lentinus edodes:plant
+Lentinus lepideus:plant
+Lepechinia calycina:plant
+Lepidothamnus fonkii:plant
+Lepidothamnus laxifolius:plant
+Leucothoe editorum:plant
+Leucothoe fontanesiana:plant
+Leucothoe racemosa:plant
+Leycesteria formosa:plant
+Lindera benzoin:plant
+Loiseleuria procumbens:plant
+Lupinus arboreus:plant
+Lycium carolinianum:plant
+Lyonia ligustrina:plant
+Lyonia lucida:plant
+Lyonia mariana:plant
+Lysiloma sabicu:plant
+Macowanites americanus:plant
+Madagascar plum:plant
+Mahernia verticillata:plant
+Mahonia aquifolium:plant
+Mahonia nervosa:plant
+Malosma laurina:plant
+Medinilla magnifica:plant
+Melastoma malabathricum:plant
+Menziesia ferruginea:plant
+Menziesia pilosa:plant
+Microstrobos niphophilus:plant
+Myrica gale:plant
+Myricaria germanica:plant
+Mysore thorn:plant
+Nero's crown:plant
+New Zealand wine berry:plant
+Ochna serrulata:plant
+Oregon grape:plant
+Oregon holly grape:plant
+Oriental black mushroom:plant
+Paliurus spina-christi:plant
+Parkinsonia aculeata:plant
+Pellicularia filamentosa:plant
+Pellicularia koleroga:plant
+Petteria ramentacea:plant
+Photinia arbutifolia:plant
+Phytophthora citrophthora:plant
+Phytophthora infestans:plant
+Pickeringia montana:plant
+Pieris floribunda:plant
+Pieris japonica:plant
+Pinckneya pubens:plant
+Piptadenia macrocarpa:plant
+Pistacia lentiscus:plant
+Pithecellodium unguis-cati:plant
+Plasmodiophora brassicae:plant
+Platylobium formosum:plant
+Playlobium obtusangulum:plant
+Plumbago europaea:plant
+Podocarpus nivalis:plant
+Pogostemon cablin:plant
+Polyporus frondosus:plant
+Prunus cuneata:plant
+Prunus laurocerasus:plant
+Prunus pumila:plant
+Prunus pumilla susquehanae:plant
+Prunus spinosa:plant
+Prunus susquehanae:plant
+Pseudowintera colorata:plant
+Pyracantha:plant
+Pyxidanthera barbulata:plant
+Quercus vaccinifolia:plant
+Radiigera fuscogleba:plant
+Radyera farragei:plant
+Retama raetam:plant
+Rhizoctinia solani:plant
+Rhus laurina:plant
+Ribes grossularia:plant
+Ribes uva-crispa:plant
+Ricinus communis:plant
+Robinia hispida:plant
+Ruscus aculeatus:plant
+Russian cactus:plant
+Russian thistle:plant
+Russian tumbleweed:plant
+Salsola kali:plant
+Salsola kali tenuifolia:plant
+Salsola soda:plant
+Santolina chamaecyparissus:plant
+Saprolegnia ferax:plant
+Sarcobatus vermiculatus:plant
+Sarcocephalus esculentus:plant
+Sarcocephalus latifolius:plant
+Schefflera actinophylla:plant
+Schizophragma hydrangeoides:plant
+Scotch gale:plant
+Senecio cineraria:plant
+Septobasidium pseudopedicellatum:plant
+Solandra guttata:plant
+Solanum macranthum:plant
+Solanum quitoense:plant
+Solanum wrightii:plant
+Sparmannia africana:plant
+Sphacele calycina:plant
+Streptosolen jamesonii:plant
+Styphelia humifusum:plant
+Styphelia triflora:plant
+Symphoricarpos orbiculatus:plant
+Synchytrium endobioticum:plant
+Syrian bean caper:plant
+Tabernaemontana divaricate:plant
+Tasman dwarf pine:plant
+Telopea Oreades:plant
+Telopea speciosissima:plant
+Templetonia retusa:plant
+Thevetia neriifolia:plant
+Thevetia peruviana:plant
+Thielavia basicola:plant
+Ulex europaeus:plant
+Ustilaginoidea virens:plant
+Viburnum dentatum:plant
+Viburnum lantana:plant
+Viburnum opulus:plant
+Viburnum prunifolium:plant
+Viburnum recognitum:plant
+Viburnum trilobum:plant
+Viminaria denudata:plant
+Viminaria juncea:plant
+Volvaria bombycina:plant
+Weigela florida:plant
+West Indian snowberry:plant
+Wintera colorata:plant
+Wynnea americana:plant
+Wynnea sparassoides:plant
+Xylaria mali:plant
+Xylaria polymorpha:plant
+Xylomelum pyriforme:plant
+Xylosma congestum:plant
+Ziziphus jujuba:plant
+Ziziphus lotus:plant
+Zygophyllum fabago:plant
+abelia:plant
+agaric:plant
+allspice:plant
+alpine azalea:plant
+alpine totara:plant
+amorpha:plant
+andromeda:plant
+angel's trumpet:plant
+aquatic plant:plant
+arbutus:plant
+arrow wood:plant
+artemisia:plant
+ascomycete:plant
+ascomycetous fungus:plant
+banksia:plant
+barbasco:plant
+barberry:plant
+barilla:plant
+basidiomycete:plant
+basidiomycetous fungi:plant
+batoko palm:plant
+bean caper:plant
+bean trefoil:plant
+bearberry:plant
+beauty bush:plant
+belvedere:plant
+bird's-eye bush:plant
+bird's-nest fungus:plant
+bitter-bark:plant
+bitter pea:plant
+black bead:plant
+black greasewood:plant
+black haw:plant
+black root rot fungus:plant
+blackthorn:plant
+bladder senna:plant
+blastomycete:plant
+blolly:plant
+blue cohosh:plant
+blueberry:plant
+blueberry bush:plant
+blueberry root:plant
+bolete:plant
+bottom rot fungus:plant
+box:plant
+boxthorn:plant
+boxwood:plant
+bracelet wood:plant
+bridal-wreath:plant
+bridal wreath:plant
+bristly locust:plant
+broom:plant
+brown root rot fungus:plant
+bryanthus:plant
+buckler mustard:plant
+buckthorn:plant
+buddleia:plant
+bulbous plant:plant
+burning bush:plant
+bush hibiscus:plant
+bush honeysuckle:plant
+bush poppy:plant
+bushman's poison:plant
+butcher's broom:plant
+butterfly bush:plant
+butterfly flower:plant
+button snakeroot:plant
+cajan pea:plant
+calliandra:plant
+camelia:plant
+camellia:plant
+candida:plant
+candlewood:plant
+cannabis:plant
+caper:plant
+capsicum:plant
+capsicum pepper plant:plant
+caragana:plant
+caricature plant:plant
+carissa:plant
+carrion fungus:plant
+casava:plant
+cash crop:plant
+cassava:plant
+castor-oil plant:plant
+castor bean plant:plant
+cat's-claw:plant
+catch crop:plant
+catclaw:plant
+catjang pea:plant
+chalice vine:plant
+chanal:plant
+chanar:plant
+chaparral broom:plant
+chaparral pea:plant
+cherry laurel:plant
+cinquefoil:plant
+clianthus:plant
+climbing hydrangea:plant
+clubroot fungus:plant
+coca:plant
+coca plant:plant
+coffee fungus:plant
+coffee rose:plant
+columnea:plant
+common flat pea:plant
+consumption weed:plant
+coral bush:plant
+coral fungus:plant
+coralberry:plant
+corkwood:plant
+corkwood tree:plant
+cormous plant:plant
+coronilla:plant
+cotoneaster:plant
+cotton:plant
+cotton-seed tree:plant
+cotton plant:plant
+cover crop:plant
+coville:plant
+coyote brush:plant
+coyote bush:plant
+crampbark:plant
+cranberry:plant
+cranberry bush:plant
+cranberry heath:plant
+cranberry tree:plant
+crape jasmine:plant
+crape myrtle:plant
+creeper:plant
+creosote bush:plant
+crepe flower:plant
+crepe gardenia:plant
+crepe jasmine:plant
+crepe myrtle:plant
+crop:plant
+croton:plant
+crowberry:plant
+crystal tea:plant
+cultivar:plant
+cultivated plant:plant
+cupflower:plant
+currant:plant
+currant bush:plant
+cushion flower:plant
+cyrilla:plant
+dahl:plant
+daisy-bush:plant
+daisy bush:plant
+daisybush:plant
+daphne:plant
+day jessamine:plant
+dead-man's-fingers:plant
+dead-men's-fingers:plant
+deciduous plant:plant
+derris:plant
+desert plant:plant
+desert rose:plant
+desert willow:plant
+devil's walking stick:plant
+dhal:plant
+dog hobble:plant
+dog laurel:plant
+dombeya:plant
+dry rot:plant
+dusty miller:plant
+dwarf golden chinkapin:plant
+earth-ball:plant
+earth-tongue:plant
+earthball:plant
+earthnut:plant
+earthstar:plant
+earthtongue:plant
+elder:plant
+elderberry bush:plant
+ephedra:plant
+ergot:plant
+evergreen:plant
+evergreen plant:plant
+false azalea:plant
+false morel:plant
+false tamarisk:plant
+false truffle:plant
+feijoa:plant
+feijoa bush:plant
+felt fungus:plant
+fetter bush:plant
+fetterbush:plant
+fever tree:plant
+field crop:plant
+fire-bush:plant
+fire bush:plant
+fire thorn:plant
+firethorn:plant
+five-finger:plant
+flame bush:plant
+flame pea:plant
+flannel bush:plant
+flannelbush:plant
+flat pea:plant
+flowering hazel:plant
+flowering quince:plant
+flowering shrub:plant
+fool's huckleberry:plant
+forestiera:plant
+forsythia:plant
+fothergilla:plant
+frangipani:plant
+frangipanni:plant
+fruitage:plant
+fuchsia:plant
+fungus:plant
+furze:plant
+gardenia:plant
+gasteromycete:plant
+gastrolobium:plant
+gastromycete:plant
+geebung:plant
+geophyte:plant
+glandular Labrador tea:plant
+glasswort:plant
+glory pea:plant
+golden oak mushroom:plant
+goldenbush:plant
+gooseberry:plant
+gooseberry bush:plant
+gorse:plant
+governor's plum:plant
+governor plum:plant
+greasewood:plant
+green smut fungus:plant
+grevillea:plant
+ground-berry:plant
+groundberry:plant
+groundsel bush:plant
+groundsel tree:plant
+guelder rose:plant
+guinea flower:plant
+guinea gold vine:plant
+gyromitra:plant
+halophyte:plant
+hamelia:plant
+hard-skinned puffball:plant
+haw:plant
+hawthorn:plant
+he-huckleberry:plant
+heath:plant
+hediondilla:plant
+helianthemum:plant
+hemp:plant
+hen-of-the-woods:plant
+hen of the woods:plant
+herb:plant
+herbaceous plant:plant
+hiccough nut:plant
+hiccup nut:plant
+highbush cranberry:plant
+hoary golden bush:plant
+holly-leaves barberry:plant
+hollygrape:plant
+honey-flower:plant
+honey bell:plant
+honeybells:plant
+honeyflower:plant
+honeysuckle:plant
+horsebean:plant
+hovea:plant
+huckleberry:plant
+huckleberry oak:plant
+hydrangea:plant
+hydrophyte:plant
+hydrophytic plant:plant
+hygrophyte:plant
+impala lily:plant
+indigo:plant
+indigo plant:plant
+jasmine:plant
+jelly fungus:plant
+joewood:plant
+joint fir:plant
+jujube:plant
+jujube bush:plant
+juniper:plant
+juniper bush:plant
+kali:plant
+kalmia:plant
+kapuka:plant
+kei apple:plant
+kei apple bush:plant
+kelpwort:plant
+kidney wort:plant
+kudu lily:plant
+lady-of-the-night:plant
+laurel cherry:plant
+laurel sumac:plant
+lavender:plant
+lavender cotton:plant
+leadwort:plant
+leatherleaf:plant
+leatherwood:plant
+lentisk:plant
+leucothoe:plant
+lichen:plant
+ligneous plant:plant
+lilac:plant
+lily-of-the-valley tree:plant
+lomatia:plant
+lorchel:plant
+lotus tree:plant
+maikoa:plant
+makomako:plant
+male berry:plant
+maleberry:plant
+mallow:plant
+manzanita:plant
+marlberry:plant
+marmalade bush:plant
+marsh tea:plant
+mastic:plant
+mastic tree:plant
+matrimony vine:plant
+mayflower:plant
+mesophyte:plant
+mesophytic plant:plant
+mesquit:plant
+mesquite:plant
+mildew:plant
+milk thistle:plant
+mimosa:plant
+minnie bush:plant
+minniebush:plant
+mock azalia:plant
+mock privet:plant
+mold:plant
+monilia:plant
+monocarpic plant:plant
+monocarpous plant:plant
+moose-wood:plant
+moosewood:plant
+moss locust:plant
+mould:plant
+mountain andromeda:plant
+mountain azalea:plant
+mountain devil:plant
+mountain fetterbush:plant
+mountain grape:plant
+mountain rimu:plant
+mucuna:plant
+mule fat:plant
+mutisia:plant
+naranjilla:plant
+native cranberry:plant
+native holly:plant
+native pear:plant
+needle-bush:plant
+needle-wood:plant
+needle bush:plant
+needle wood:plant
+needlebush:plant
+needlewood:plant
+negro peach:plant
+night jasmine:plant
+night jessamine:plant
+nonflowering plant:plant
+oleaster:plant
+ordeal tree:plant
+othonna:plant
+pachouli:plant
+palma christ:plant
+palma christi:plant
+paloverde:plant
+papoose root:plant
+papooseroot:plant
+patchouli:plant
+patchouly:plant
+pavonia:plant
+pea tree:plant
+pepper:plant
+pepper bush:plant
+pepper shrub:plant
+perennial:plant
+phalsa:plant
+phanerogam:plant
+philadelphus:plant
+pichi:plant
+pigeon-pea plant:plant
+pigeon pea:plant
+pincushion hakea:plant
+pink disease fungus:plant
+pink fivecorner:plant
+pinwheel flower:plant
+pitcher sage:plant
+pixie:plant
+pixy:plant
+poison arrow plant:plant
+poison bush:plant
+poison pea:plant
+pond-scum parasite:plant
+pot plant:plant
+potato fungus:plant
+potato tree:plant
+potato wart fungus:plant
+privet:plant
+privet andromeda:plant
+protea:plant
+psilophyte:plant
+psilophyton:plant
+pteridophyte:plant
+puffball:plant
+puka:plant
+purple pea:plant
+pyracanth:plant
+pythium:plant
+pyxie:plant
+raetam:plant
+ramontchi:plant
+rattlesnake's master:plant
+rattlesnake master:plant
+rauvolfia:plant
+rauwolfia:plant
+red angel's trumpet:plant
+red gram:plant
+red shrubby penstemon:plant
+redwood penstemon:plant
+retem:plant
+rhizoctinia:plant
+rhododendron:plant
+rock rose:plant
+rockrose:plant
+rooibos:plant
+root crop:plant
+ropebark:plant
+rose:plant
+rose acacia:plant
+rosebush:plant
+rust:plant
+rust fungus:plant
+sabicu:plant
+sac fungus:plant
+salal:plant
+salt tree:plant
+saltbush:plant
+saltwort:plant
+sand cherry:plant
+sand myrtle:plant
+scaly lentinus:plant
+sclerotinia:plant
+screw tree:plant
+sea eryngium:plant
+sea holly:plant
+sea holm:plant
+seed plant:plant
+semaphore plant:plant
+senna:plant
+service tree:plant
+serviceberry:plant
+shadblow:plant
+shadbush:plant
+shallon:plant
+shiitake:plant
+shiitake mushroom:plant
+shiny lyonia:plant
+shrub:plant
+shrublet:plant
+shumac:plant
+silver-bush:plant
+silverbush:plant
+silversword:plant
+slime mold:plant
+slime mould:plant
+slipper plant:plant
+slipper spurge:plant
+sloe:plant
+smoke bush:plant
+smoke tree:plant
+smut:plant
+smut fungus:plant
+southern arrow wood:plant
+sow thistle:plant
+spermatophyte:plant
+spice bush:plant
+spiceberry:plant
+spicebush:plant
+spindle tree:plant
+spindleberry:plant
+spindleberry tree:plant
+spiraea:plant
+spirea:plant
+sporophyte:plant
+spurge:plant
+squaw root:plant
+squawroot:plant
+staff tree:plant
+stagger bush:plant
+staggerbush:plant
+stalked puffball:plant
+stephanotis:plant
+stingaree-bush:plant
+stinkhorn:plant
+stinking bean trefoil:plant
+strawberry bush:plant
+strophanthus:plant
+styrax:plant
+subshrub:plant
+succulent:plant
+suffrutex:plant
+sumac:plant
+sumach:plant
+summer cypress:plant
+summer sweet:plant
+sun rose:plant
+sunrose:plant
+swamp oak:plant
+sweet bells:plant
+sweet fern:plant
+sweet gale:plant
+sweet pepperbush:plant
+switch-ivy:plant
+tagasaste:plant
+tamarillo:plant
+tamarisk:plant
+tea:plant
+telegraph plant:plant
+thorn apple:plant
+three-seeded mercury:plant
+ti:plant
+tollon:plant
+tooth fungus:plant
+toyon:plant
+trailing arbutus:plant
+trapper's tea:plant
+tree lupine:plant
+tree mallow:plant
+tree poppy:plant
+tree tomato:plant
+true fungus:plant
+true puffball:plant
+truffle:plant
+trumpet flower:plant
+tuberous plant:plant
+tumbleweed:plant
+twist wood:plant
+twistwood:plant
+umbrella tree:plant
+undershrub:plant
+vascular plant:plant
+velvet-leaf:plant
+velvetleaf:plant
+verticillium:plant
+vine:plant
+wahoo:plant
+waratah:plant
+water plant:plant
+wax myrtle:plant
+wayfaring tree:plant
+weed:plant
+weigela:plant
+western redbud:plant
+whin:plant
+white alder:plant
+white cinnamon tree:plant
+white fungus:plant
+white rust:plant
+white titi:plant
+wicopy:plant
+wild cinnamon:plant
+wild peach:plant
+wild rosemary:plant
+wineberry:plant
+winged pigweed:plant
+winter hazel:plant
+winter sweet:plant
+witch alder:plant
+witch hazel:plant
+witch hazel plant:plant
+woody pear:plant
+woody plant:plant
+wych hazel:plant
+wych hazel plant:plant
+xerophile:plant
+xerophilous plant:plant
+xerophyte:plant
+xerophytic plant:plant
+xylosma:plant
+yeast:plant
+yellow oleander:plant
+yellow spot fungus:plant
+yerba santa:plant
+yucca:plant

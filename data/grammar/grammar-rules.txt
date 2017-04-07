@@ -1,0 +1,117 @@
+//
+// grammar patterns with names
+//
+
+// urls
+
+private url_character= [ % ! # @ / \ ; & - _ $ . ? + = ^ * ( ) [ ] { } abc number ]
+private url_prefix = [ http https ftp mailto ]
+
+public url.1 = url_prefix : / / url_character+
+public url.2 = www . url_character+
+
+
+// numbers
+
+public decimal.1 = number . number
+public decimal.2 = - number . number
+
+public percent.1 = number %
+public percent.2 = number . number %
+public percent.3 = - number . number %
+
+// money
+
+private currency_prefix = [ $ NZ $NZ US $US US$ NZ$ $AU AU$ ]
+
+public money.1 = currency_prefix decimal.1
+public money.2 = currency_prefix decimal.2
+public money.3 = currency_prefix number
+public money.4 = currency_prefix - number
+
+// time
+private am_pm = [ pm am PM AM P.M A.M ]
+public time.1 = number.range(0,24) : number.range(0,59) : number.range(0,59) . number.range(0,999)
+public time.2 = number.range(0,24) : number.range(0,59) : number.range(0,59)
+public time.3 = number.range(0,12) : number.range(0,59) : number.range(0,59) space am_pm
+public time.4 = number.range(0,24) : number.range(0,59)
+public time.5 = number.range(0,12) : number.range(0,59) space am_pm
+
+// java SimpleDateFormat conversion patterns for the above rules
+pattern time.1 = HH:mm:ss.SSS
+pattern time.2 = HH:mm:ss
+pattern time.3 = hh:mm:ss a
+pattern time.4 = HH:mm
+pattern time.5 = hh:mm a
+
+// dates
+
+private date_separator = [ / - \ ]
+private month = [ January February March April May June July August September October November December Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan. Feb. Mar. Apr. May. Jun. Jul. Aug. Sep. Oct. Nov. Dec. ]
+
+// NZ dates
+public date.1 = number.range(1,31) date_separator number.range(1,12) date_separator number.range(1600,2100)
+public date.2 = number.range(1,31) date_separator month date_separator number.range(1600,2100)
+public date.3 = number.range(1,31) space month space number.range(1600,2100)
+public date.4 = number.range(1,31) space month
+
+pattern date.1 = dd/MM/yyyy
+pattern date.2 = dd/MMM/yyyy
+pattern date.3 = dd MMM yyyy
+pattern date.4 = dd MMM
+
+// ISO date
+public date.5 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) space number.range(0,12) : number.range(0,59)  : number.range(0,59) space am_pm
+public date.6 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) space number.range(0,12) : number.range(0,59) space am_pm
+public date.7 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) space number.range(0,24) : number.range(0,59) : number.range(0,59) . number.range(0,999)
+public date.8 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) space number.range(0,24) : number.range(0,59) : number.range(0,59)
+public date.9 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31)
+
+pattern date.5 = yyyy/MM/dd hh:mm:ss a
+pattern date.6 = yyyy/MM/dd hh:mm a
+pattern date.7 = yyyy/MM/dd HH:mm:ss.SSS
+pattern date.8 = yyyy/MM/dd HH:mm:ss
+pattern date.9 = yyyy/MM/dd
+
+// US dates
+public date.10 = number.range(1,12) date_separator number.range(1,31) date_separator number.range(1600,2100)
+public date.11 = month date_separator number.range(1,31) date_separator number.range(1600,2100)
+public date.12 = month space number.range(1,31) , space number.range(1600,2100)
+
+pattern date.10 = MM/dd/yyyy
+pattern date.11 = MMM/dd/yyyy
+pattern date.12 = MMM dd, yyyy
+
+// spacy no "space" dates
+public date.13 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) number.range(0,12) : number.range(0,59)  : number.range(0,59) am_pm
+public date.14 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) number.range(0,12) : number.range(0,59) am_pm
+public date.15 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) number.range(0,24) : number.range(0,59) : number.range(0,59) . number.range(0,999)
+public date.16 = number.range(1600,2100) date_separator number.range(1,12) date_separator number.range(1,31) number.range(0,24) : number.range(0,59) : number.range(0,59)
+
+pattern date.13 = yyyy/MM/dd hh:mm:ssa
+modifier date.13 = space@5
+
+pattern date.14 = yyyy/MM/dd hh:mma
+modifier date.14 = space@5
+
+pattern date.15 = yyyy/MM/dd HH:mm:ss.SSS
+modifier date.15 = space@5
+
+pattern date.16 = yyyy/MM/dd HH:mm:ss
+modifier date.16 = space@5
+
+public date.17 = month number.range(1,31) , number.range(1600,2100)
+pattern date.17 = MMM dd,yyyy
+modifier date.17 = space@1
+
+// email
+private email_character= [ . - _ abc number ]
+public email.1 = email_character+ @ email_character+
+
+// phone numbers US
+private phone_separator = [ - space ]
+public phone.1 = number.range(100,999) phone_separator number.range(1,999) phone_separator number.range(1,9999)
+public phone.2 = ( number.range(100,999) ) space number.range(1,999) phone_separator number.range(1,9999)
+
+public phone.3 = ( number.range(100,999) ) number.range(1,999) phone_separator number.range(1,9999)
+modifier phone.3 = space@3

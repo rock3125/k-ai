@@ -1,0 +1,44 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# install kai's data
+#
+  - name: testing KAI data folder exists
+    stat: path={{ kai_base }}/data/web
+    register: data_exists
+
+  - name: copying data/properties.ini
+    copy: src={{ dev_base }}/data/properties.ini dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False
+
+  - name: copying data/aiml
+    copy: src={{ dev_base }}/data/aiml dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False
+
+  - name: copying data/freebase
+    copy: src={{ dev_base }}/data/freebase dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False
+
+  - name: copying data/grammar
+    copy: src={{ dev_base }}/data/grammar dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False
+
+  - name: copying data/lexicon
+    copy: src={{ dev_base }}/data/lexicon dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False
+
+  - name: copying data/cql
+    copy: src={{ dev_base }}/data/cql dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False
+
+  - name: copying data/web
+    copy: src={{ dev_base }}/data/web dest={{ kai_base }}/data/
+    when: data_exists.stat.exists == False

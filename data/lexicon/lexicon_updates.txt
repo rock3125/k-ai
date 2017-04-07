@@ -1,0 +1,20 @@
+#
+# list used by semantic entity editor to update the lexicon's semantics
+#
+del|test@test.com|mcpeters:
+del|test@test.com|peter:
+del|test@test.com|peter pan:
+save|test@test.com|smurfette:smurf
+save|test@test.com|test:tester
+del|test@test.com|test:
+del|test@test.com|peterkin:
+save|test@test.com|petersen:man
+del|A B|petersen:
+del|A B|Mcpeters:
+del|A B|Stpeter:
+save|A B|peter test:person
+del|A B|peter test:
+save|A B|peter test:person
+del|A B|peter test:
+save|A B|Peter Test:person
+del|A B|Peter Test:

@@ -1,0 +1,84 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# upgrade OS packages
+#
+  # - name: upgrade all packages
+  #   apt:
+  #     upgrade: dist
+  #     update_cache: yes
+
+  # this doesn't apply to Ubuntu server...
+#  - name: stop slow CUPS daemon 1
+#    shell: systemctl disable cups-browsed.service
+#
+#  - name: stop slow CUPS daemon 2
+#    shell: systemctl stop cups-browsed.service
+
+#
+# create user and group
+#
+  - name: create kai group on {{ inventory_hostname }}
+    group: name=kai state=present
+
+  - name: create kai user on {{ inventory_hostname }}
+    user: name=kai comment="KAI User" group=kai
+
+#
+# disable ipv6
+#
+
+
+
+#  - name: disable all ipv6
+#    sysctl:
+#      name: net.ipv6.conf.all.disable_ipv6
+#      value: 1
+#      sysctl_set: yes
+#      state: present
+#      reload: no
+#
+#  - name: disable default ipv6
+#    sysctl:
+#      name: net.ipv6.conf.default.disable_ipv6
+#      value: 1
+#      sysctl_set: yes
+#      state: present
+#      reload: no
+#
+#  - name: disable lo ipv6
+#    sysctl:
+#      name: net.ipv6.conf.lo.disable_ipv6
+#      value: 1
+#      sysctl_set: yes
+#      state: present
+#      reload: no
+
+  - name: check is GRUB up-to-date for ipv6 blocking?
+    shell: cat /etc/default/grub
+    register: gub_contents
+
+  - name: disable ipv6 in GRUB
+    replace: dest=/etc/default/grub regexp='^GRUB_CMDLINE_LINUX=.*' replace='GRUB_CMDLINE_LINUX="ipv6.disable=1"'
+    when: gub_contents.stdout.find('ipv6.disable') == -1
+
+  - name: rebuild GRUB to disable ipv6
+    shell: sudo update-grub2
+    when: gub_contents.stdout.find('ipv6.disable') == -1
+
+
+#  - name: temp disable ipv6 now
+#    shell: echo "1" > /proc/sys/net/ipv6/conf/all/disable_ipv6
+
+# update apt
+#  - name: update apt
+#    shell: sudo apt update
+

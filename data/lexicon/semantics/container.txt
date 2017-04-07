@@ -1,0 +1,81 @@
+Dumpster:container
+bag:container
+bank:container
+basket:container
+bin:container
+bowl:container
+box:container
+bread-bin:container
+breadbox:container
+bunker:container
+can:container
+canister:container
+cannister:container
+capsule:container
+cargo container:container
+case:container
+cassette:container
+cast:container
+circular file:container
+coal scuttle:container
+coin bank:container
+container:container
+cup:container
+cylinder:container
+dice box:container
+dice cup:container
+dish:container
+dispenser:container
+display case:container
+drawer:container
+drinking glass:container
+empty:container
+envelope:container
+flowerpot:container
+fuel pod:container
+glass:container
+grab bag:container
+handbag:container
+handbasket:container
+magnetic bottle:container
+mailer:container
+manger:container
+mold:container
+money box:container
+mould:container
+package:container
+pan:container
+parcel:container
+pipe bowl:container
+pocketbook:container
+pod:container
+pot:container
+powder flask:container
+powder horn:container
+purse:container
+receptacle:container
+reliquary:container
+saltcellar:container
+savings bank:container
+scuttle:container
+shaker:container
+showcase:container
+spoon:container
+storage ring:container
+thimble:container
+time capsule:container
+tin:container
+tin can:container
+trough:container
+vessel:container
+vitrine:container
+waste-paper basket:container
+waste basket:container
+wastebasket:container
+wastepaper basket:container
+watering can:container
+watering pot:container
+wheeled vehicle:container
+workbag:container
+workbasket:container
+workbox:container

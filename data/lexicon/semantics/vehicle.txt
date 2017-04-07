@@ -1,0 +1,110 @@
+armored combat vehicle:vehicle
+armoured combat vehicle:vehicle
+army tank:vehicle
+arrow:vehicle
+baby buggy:vehicle
+baby carriage:vehicle
+bicycle:vehicle
+bike:vehicle
+boat:vehicle
+bob:vehicle
+bobsled:vehicle
+bobsleigh:vehicle
+boneshaker:vehicle
+boomerang:vehicle
+booster rocket:vehicle
+booster unit:vehicle
+booster:vehicle
+bullet:vehicle
+bumper car:vehicle
+caisson:vehicle
+cannon ball:vehicle
+cannonball:vehicle
+car:vehicle
+carriage:vehicle
+cart:vehicle
+coaster wagon:vehicle
+combat ship:vehicle
+craft:vehicle
+cycle:vehicle
+dart:vehicle
+dodgem:vehicle
+dog sled:vehicle
+dog sleigh:vehicle
+dogsled:vehicle
+go-cart:vehicle
+half track:vehicle
+handcart:vehicle
+horse-drawn vehicle:vehicle
+house trailer:vehicle
+luge:vehicle
+military plane:vehicle
+military vehicle:vehicle
+missile:vehicle
+monocycle:vehicle
+motor scooter:vehicle
+multistage rocket:vehicle
+nuclear rocket:vehicle
+pellet:vehicle
+perambulator:vehicle
+personnel carrier:vehicle
+picket:vehicle
+pram:vehicle
+projectile:vehicle
+pung:vehicle
+pushcart:vehicle
+pushchair:vehicle
+pusher:vehicle
+railcar:vehicle
+railroad car:vehicle
+railway car:vehicle
+reconnaissance vehicle:vehicle
+research rocket:vehicle
+retrorocket:vehicle
+road roller:vehicle
+rocket:vehicle
+rolling stock:vehicle
+round shot:vehicle
+scooter:vehicle
+scout car:vehicle
+seeker:vehicle
+self-propelled vehicle:vehicle
+shot:vehicle
+skateboard:vehicle
+skibob:vehicle
+sled:vehicle
+sledge:vehicle
+sleigh:vehicle
+slug:vehicle
+space rocket:vehicle
+spitball:vehicle
+steamroller:vehicle
+step rocket:vehicle
+stroller:vehicle
+takeoff booster:vehicle
+takeoff rocket:vehicle
+tank:vehicle
+technical:vehicle
+test instrument vehicle:vehicle
+test rocket:vehicle
+throw stick:vehicle
+throwing stick:vehicle
+thruster:vehicle
+toboggan:vehicle
+trailer:vehicle
+tricycle:vehicle
+trike:vehicle
+troop carrier:vehicle
+troop transport:vehicle
+unicycle:vehicle
+vehicle:vehicle
+velocipede:vehicle
+waggon:vehicle
+wagon:vehicle
+war vessel:vehicle
+warplane:vehicle
+warship:vehicle
+weapons carrier:vehicle
+welcome wagon:vehicle
+wheel:vehicle
+wheeled vehicle:vehicle

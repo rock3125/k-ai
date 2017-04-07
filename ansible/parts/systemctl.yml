@@ -1,0 +1,51 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# setup KAI services (kai, cassandra, spacy)
+#
+  - name: copying kai service
+    copy: src={{ dev_base }}/data/services/kai.service dest=/lib/systemd/system/
+
+  - name: copying cassandra service
+    copy: src={{ dev_base }}/data/services/cassandra.service dest=/lib/systemd/system/
+
+  - name: copying spacy service
+    copy: src={{ dev_base }}/data/services/spacy.service dest=/lib/systemd/system/
+
+
+  - name: set correct cassandra folder
+    replace: dest=/lib/systemd/system/cassandra.service regexp='/opt/cassandra/bin' replace='{{ s_cassandra_dir }}/bin'
+
+  - name: create /var/lib/cassandra PID folder
+    file: path=/var/lib/cassandra state=directory owner=kai group=kai
+
+  - name: set permissions on the /var/lib/cassandra PID folder
+    file: path=/var/lib/cassandra state=directory owner=kai group=kai recurse=yes mode=u+rw
+
+  - name: set correct jdk folder
+    replace: dest=/lib/systemd/system/cassandra.service regexp='JAVA_HOME=.*' replace='JAVA_HOME={{ s_jdk_dir }}'
+
+
+  - name: reloading services
+    shell: systemctl daemon-reload
+
+  - name: enabling cassandra service
+    shell: systemctl enable cassandra
+
+  - name: enabling spacy service
+    shell: systemctl enable spacy
+
+  - name: enabling kai service
+    shell: systemctl enable kai
+
+  - name: restarting kai service
+    shell: systemctl restart kai
+

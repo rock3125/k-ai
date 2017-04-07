@@ -1,0 +1,196 @@
+/*!
+ * Copyright (c) 2017 by Peter de Vocht
+ *
+ * All rights reserved. No part of this publication may be reproduced, distributed, or
+ * transmitted in any form or by any means, including photocopying, recording, or other
+ * electronic or mechanical methods, without the prior written permission of the publisher,
+ * except in the case of brief quotations embodied in critical reviews and certain other
+ * noncommercial uses permitted by copyright law.
+ *
+ */
+
+.logo-offset {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.glyphicon-search {
+    font-size: 1.2em;
+    color: #fffaed;
+}
+
+span.glyphicon-plus {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+span.glyphicon-book {
+    font-size: 1.2em;
+    color: #fffaed;
+}
+
+.btn-kaisearch {
+    background: #0e264d;
+    color: #fff;
+    padding: 6px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px !important;
+    border: 1px solid #0e264d;
+    transition: all 0.3s;
+}
+.btn-kaisearch:hover {
+    background: #dd0000;
+    color: #fff;
+    padding: 6px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px !important;
+    border: 1px solid #dd0000;
+    transition: all 0.1s;
+}
+
+.btn-kaisearch-alt {
+    background: #fff;
+    color: #0e264d;
+    padding: 7px 24px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 20px !important;
+    border: 1px solid #0e264d;
+    transition: all 0.3s;
+}
+.btn-kaisearch-alt:hover {
+    background: #0e264d;
+    color: #fff;
+    transition: all 0.3s;
+}
+.text-kaisearch:hover {
+    border-radius: 0 !important;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #0e264d !important;
+    color: #0e264d !important;
+    font-size: 16px !important;
+    outline: none !important;
+}
+
+
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+
+.text-kaisearch, .text-kaisearch:hover {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1.5px solid #0e264d;
+    color: #0e264d;
+    font-size: 16px;
+    outline: none !important;
+}
+.text-kaisearch:focus, .text-kaisearch:active {
+    border-bottom: 1.5px solid #0e264d;
+}
+input:focus, input, input:active, button, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.text-kaisearch::-webkit-input-placeholder {
+    color: #999999;
+}
+.text-kaisearch:-moz-placeholder,
+.text-kaisearch::-moz-placeholder,
+.text-kaisearch:-ms-input-placeholder {
+    color: #999999;
+}
+
+
+.modal-header {
+    background-color: #b3b3b3;
+    color: #fff;
+}
+
+.modal-red-header {
+    background-color: #ff5353;
+    color: #fff;
+}
+
+.modal-offset-top {
+    margin-top: 50px;
+}
+
+.modal-offset-center {
+    margin: auto;
+}
+
+.modal-offset-top-2 {
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.close-button {
+    color: #fff;
+}
+
+/* loader / spinner */
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+

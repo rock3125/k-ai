@@ -1,0 +1,16 @@
+<aiml version="1.0">
+
+    <!--                                                                                       -->
+    <!-- these are special language search templates that indicate how to search given a query -->
+    <!--                                                                                       -->
+
+    <category>
+        <pattern>WHAT ARE (THE|SOME) (ATTRIBUTES|FEATURES) (OF|OF A|OF AN|OF THE) *?</pattern>
+        <pattern>WHAT ARE (ATTRIBUTES|FEATURES) OF *?</pattern>
+        <pattern>WHAT (ATTRIBUTES|FEATURES) (DO|DOES|DOES A|DOES THE|DOES AN) * (HAS|HAVE)?</pattern>
+        <pattern>WHAT (DO|DOES|DOES A|DOES THE|DOES AN) * (HAS|HAVE)?</pattern>
+        <template>{search:is,*}</template>
+    </category>
+
+
+</aiml>

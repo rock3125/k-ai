@@ -1,0 +1,20 @@
+# idea
+.idea
+
+**/bin/kai
+**/github.com/
+**/golang.org/
+**/gopkg.in/
+**/log/
+**/*.iml
+**/*.versionsBackup
+**/*.retry
+**/npm-debug.log
+**/pkg/
+**/__pycache__/
+glove.6B*
+**/kai_parser.egg-info/
+**/build/
+freebase_*.txt
+**/dist
+**/build

@@ -1,0 +1,41 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# external data files;  spacy
+#
+  - name: testing Spacy file existence
+    stat: path=/opt/spacy/en-1.1.0/meta.json
+    register: spacy_exists
+
+  - name: download Spacy files
+    shell: scp {{ soft_base }}/{{ spacy_file }} /tmp/{{ spacy_file }}
+    when: spacy_exists.stat.exists == False
+
+  - name: extract Spacy files
+    unarchive: src=/tmp/{{ spacy_file }} dest=/opt/ copy=no
+    when: spacy_exists.stat.exists == False
+
+  - name: removing Spacy tgz download
+    file: path=/tmp/{{ spacy_file }} state=absent
+    when: spacy_exists.stat.exists == False
+
+
+# copy spacy parser server files
+
+  - name: copying spacy server
+    copy: src={{ dev_base }}/spacy/ dest={{ kai_base }}/spacy/ owner=kai group=kai mode=0600 directory_mode=0700 force=yes
+
+  - name: set exec permissions on spacy script
+    file: path={{ kai_base }}/spacy/start.sh owner=kai group=kai mode=a+x
+
+  - name: set exec permissions on spacy python
+    file: path={{ kai_base }}/spacy/server.py owner=kai group=kai mode=a+x
+

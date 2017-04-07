@@ -1,0 +1,71 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# install Cassandra
+#
+  - name: testing Cassandra downloaded
+    stat: path=/import/software/{{ s_cassandra }}
+    register: cassandra_exists
+
+  - name: download Cassandra (if dne)
+    shell: scp {{ s_software_base }}/{{ s_cassandra }} /import/software/
+    when: cassandra_exists.stat.exists == False
+
+  - name: testing Cassandra installation
+    stat: path=/opt/{{ s_cassandra_dir }}/bin/cassandra
+    register: cassandra_installed
+
+  - name: install Cassandra from a local file
+    shell: tar xvzf /import/software/{{ s_cassandra }}
+    args:
+      chdir: /opt/
+    when: cassandra_installed.stat.exists == False
+
+#
+# setup cassandra config
+#
+  - name: cassandra, setting listen address with hostname
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^listen_address{{':'}}.*' replace='listen_address{{':'}} {{ inventory_hostname }}'
+
+  - name: cassandra, setting seeds to {{ play_hosts[0] }}
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='seeds{{':'}} .*' replace='seeds{{':'}} "{{ play_hosts[0] }}"'
+
+  - name: cassandra, setting rpc_address to 0.0.0.0
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^rpc_address{{':'}}.*' replace='rpc_address{{':'}} 0.0.0.0'
+
+  - name: cassandra, setting broadcast_rpc_address to 0.0.0.255
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^# broadcast_rpc_address.*' replace='broadcast_rpc_address{{':'}} 0.0.0.255'
+
+  - name: enable cassandra JMX 7199
+    lineinfile:  dest={{ cassandra_dir }}/conf/jvm.options
+      regexp='^-Djava.rmi.server.hostname={{ inventory_hostname }}'
+      line='-Djava.rmi.server.hostname={{ inventory_hostname }}'
+
+  - name: cassandra, setting rpc address with hostname
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^rpc_address{{':'}}.*' replace='rpc_address{{':'}} 0.0.0.0'
+
+  - name: cassandra, setup listen_interface_prefer_ipv6
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^# listen_interface_prefer_ipv6.*' replace='listen_interface_prefer_ipv6{{':'}} false'
+
+  - name: cassandra, setup rpc_interface_prefer_ipv6
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^# rpc_interface_prefer_ipv6.*' replace='rpc_interface_prefer_ipv6{{':'}} false'
+
+  - name: cassandra, set auto_snapshot false
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^auto_snapshot.*true' replace='auto_snapshot{{':'}} false'
+
+  - name: cassandra, set cluster name to {{ cassandra_cluster_name }}
+    replace: dest={{ s_cassandra_dir }}/conf/cassandra.yaml regexp='^cluster_name.*' replace="cluster_name{{':'}} '{{ cassandra_cluster_name }}'"
+
+  - name: enable cassandra auto bootstrap
+    lineinfile:  dest={{ cassandra_dir }}/conf/cassandra.yaml
+      regexp='^auto_bootstrap{{':'}} false'
+      line='auto_bootstrap{{':'}} false'
+

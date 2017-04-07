@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name Please</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/name.css" rel="stylesheet">
+</head>
+<body>
+<div class="container top-offset">
+
+
+    <div class="row">
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4 home-logo">
+            <img src="images/logo_white.png" data-ng-click="goHome()" class="header-logo center-block">
+            <h2><span id="changingword" class="changingword"></span></h2>
+            <div class="name-class">Please login.</div>
+        </div>
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 viki-background-white">
+            <!-- Main Form -->
+            <div class="login-form-1">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+
+                    <div class="login-group row">
+                        <div class="form-group go-bottom col-xs-12">
+                            <input type="text" class="form-control text-kaisearch" id="txtUsername" placeholder="Your email address please">
+                            <label for="txtUsername" class="sr-only"></label>
+                        </div>
+
+                        <div class="form-group go-bottom col-xs-12">
+                            <input type="password" class="form-control text-kaisearch" id="txtPassword"
+                                   onkeypress="namefrm.signin_keypress(event);"
+                                   placeholder="password">
+                            <label for="txtPassword" class="sr-only"></label>
+                        </div>
+
+                        <div class="form-group go-bottom col-xs-12">
+                            <p>Don't have an Account? <a href="" onclick="return namefrm.showCreateAccount()" style="color:#000;">create a new account</a></p>
+                        </div>
+                    </div>
+
+
+
+                    <button type="submit" class="login-button" onclick="namefrm.signin()"><i>GO</i></button>
+                </div>
+
+                <!-- end:Main Form -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- create account dialog -->
+    <div id="createAccountDlg" class="modal fade modal-create-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-blue-header">
+                <br/>
+                <button type="button" class="close close-button" data-dismiss="modal">&times;&nbsp;&nbsp;</button>
+                <h4 class="modal-title">&nbsp;&nbsp;CREATE NEW ACCOUNT</h4>
+                <br/>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="reg_firstname" class="sr-only">Firstname</label>
+                    <input type="text" class="form-control text-kaisearch" id="reg_firstname" name="reg_firstname" placeholder="First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg_lastname" class="sr-only">Lastname</label>
+                    <input type="text" class="form-control text-kaisearch" id="reg_lastname" name="reg_lastname" placeholder="Last Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg_email" class="sr-only">Email Address</label>
+                    <input type="text" class="form-control text-kaisearch" id="reg_email" name="reg_email" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg_password" class="sr-only">Password</label>
+                    <input type="password" class="form-control text-kaisearch" id="reg_password" name="reg_password" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg_password_confirm" class="sr-only">Password Confirm</label>
+                    <input type="password" class="form-control text-kaisearch" id="reg_password_confirm" name="reg_password_confirm" placeholder="Confirm Password">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">Cancel</button>
+                    <button type="button" onclick="namefrm.createUser()" class="btn btn-kaisearch-alt">CREATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal error message dialog -->
+    <div id="errorMessage" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-red-header">
+                <br/>
+                <button type="button" class="close close-button" data-dismiss="modal">&times;&nbsp;&nbsp;</button>
+                <h4 class="modal-title">&nbsp;&nbsp;ERROR</h4>
+                <br/>
+            </div>
+            <div class="modal-body">
+                <div id="lblErrorMessage"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/utility.js"></script>
+<script src="js/login.js"></script>
+
+<script>
+    $("#txtUsername").focus();
+</script>
+
+</body>
+</html>

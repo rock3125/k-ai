@@ -1,0 +1,18 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# install kai's binary
+#
+  - name: copying bin/kai
+    copy: src={{ dev_base }}/bin/kai dest={{ kai_base }}/ mode=a+x
+
+  - name: copying bin/start.sh
+    copy: src={{ dev_base }}/bin/start.sh dest={{ kai_base }}/ mode=a+x

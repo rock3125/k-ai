@@ -1,0 +1,22 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# permissions - usually run at the end after all is done
+#
+  - name: set permissions on the kai root folder
+    file: path=/opt state=directory owner=kai group=kai recurse=yes mode=u+rw
+
+  - name: set permissions on the cassandra folder
+    file: path={{ s_cassandra_dir }} state=directory owner=kai group=kai recurse=yes mode=u+rw
+
+  - name: set permissions on the kai log folder /var/log/kai
+    file: path=/var/log/kai state=directory owner=kai group=kai recurse=yes
+

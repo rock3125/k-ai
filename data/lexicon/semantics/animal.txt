@@ -1,0 +1,419 @@
+Acinonyx jubatus:animal
+Africander:animal
+Aranea diademata:animal
+Araneus cavaticus:animal
+Argiope aurantia:animal
+Asian horseshoe crab:animal
+Canis aureus:animal
+Canis familiaris:animal
+Clupea harangus:animal
+Devon:animal
+Felis onca:animal
+Fissipedia:animal
+Formica rufa:animal
+Frankliniella fusca:animal
+Hippopotamus amphibius:animal
+Latrodectus mactans:animal
+Limulus polyphemus:animal
+Menopon gallinae:animal
+Menopon palladum:animal
+Merostomata:animal
+Monomorium minimum:animal
+Monomorium pharaonis:animal
+Orycteropus afer:animal
+Panthera leo:animal
+Panthera onca:animal
+Panthera pardus:animal
+Panthera tigris:animal
+Panthera uncia:animal
+Pediculus capitis:animal
+Pediculus corporis:animal
+Pediculus humanus:animal
+Phthirius pubis:animal
+Phylloxera vitifoleae:animal
+Scutigerella immaculata:animal
+Thrips tobaci:animal
+Unguiculata:animal
+Ungulata:animal
+Vicugna vicugna:animal
+Welsh:animal
+Welsh Black:animal
+Xiphosurus polyphemus:animal
+aardvark:animal
+acanthocephalan:animal
+adelgid:animal
+annelid:animal
+annelid worm:animal
+ant:animal
+ant bear:animal
+anteater:animal
+aphid:animal
+aquatic mammal:animal
+arachnid:animal
+arachnoid:animal
+army ant:animal
+arrowworm:animal
+arthropod:animal
+artiodactyl:animal
+artiodactyl:animal
+artiodactyl mammal:animal
+artiodactyl mammal:animal
+barn spider:animal
+bass:animal
+bat:animal
+beard worm:animal
+bee killer:animal
+beef:animal
+beef cattle:animal
+beetle:animal
+big cat:animal
+bird louse:animal
+bitch:animal
+biting louse:animal
+black and gold garden spider:animal
+black widow:animal
+blowfish:animal
+bluefish:animal
+body louse:animal
+bottom fish:animal
+bream:animal
+brook trout:animal
+buck:animal
+buffalofish:animal
+bug:animal
+bull:animal
+bulldog ant:animal
+bullock:animal
+butterfish:animal
+camel:animal
+canine:animal
+carnivore:animal
+carp:animal
+carpenter ant:animal
+cat:animal
+catfish:animal
+cattle:animal
+centipede:animal
+chaetognath:animal
+char:animal
+charr:animal
+cheetah:animal
+chetah:animal
+chicken louse:animal
+chiropteran:animal
+class Merostomata:animal
+cod:animal
+codfish:animal
+collembolan:animal
+colugo:animal
+comb-footed spider:animal
+common louse:animal
+coney:animal
+cony:animal
+cootie:animal
+cow:animal
+crab:animal
+crab louse:animal
+crane fly:animal
+croaker:animal
+crustacean:animal
+cusk:animal
+daddy longlegs:animal
+dairy cattle:animal
+dairy cow:animal
+das:animal
+dassie:animal
+defoliator:animal
+dictyopterous insect:animal
+digitigrade:animal
+digitigrade mammal:animal
+dinoceras:animal
+dinocerate:animal
+dinocerate:animal
+dipteran:animal
+dipteron:animal
+dipterous insect:animal
+doe:animal
+dog:animal
+dolphinfish:animal
+domestic dog:animal
+driver ant:animal
+earwig:animal
+edentate:animal
+elasmobranch:animal
+ephemeral:animal
+ephemerid:animal
+ephemeron:animal
+ephemeropteran:animal
+equid:animal
+equine:animal
+eurypterid:animal
+eutherian:animal
+eutherian mammal:animal
+even-toed ungulate:animal
+even-toed ungulate:animal
+fang:animal
+farm animal:animal
+feline:animal
+fire ant:animal
+flatfish:animal
+flatworm:animal
+flea:animal
+fly:animal
+flying cat:animal
+flying lemur:animal
+food fish:animal
+fox:animal
+freshwater bass:animal
+freshwater bream:animal
+freshwater fish:animal
+fruit fly:animal
+fungus gnat:animal
+gall gnat:animal
+gall midge:animal
+gallfly:animal
+garden centipede:animal
+garden spider:animal
+garden symphilid:animal
+gnat:animal
+gnawer:animal
+gnawing animal:animal
+gnawing mammal:animal
+grade:animal
+grape louse:animal
+grape phylloxera:animal
+groundfish:animal
+grouper:animal
+head louse:animal
+helminth:animal
+hemipteran:animal
+hemipteron:animal
+hemipterous insect:animal
+herring:animal
+heteropterous insect:animal
+hippo:animal
+hippoboscid:animal
+hippopotamus:animal
+holometabola:animal
+homopteran:animal
+homopterous insect:animal
+hoofed mammal:animal
+horseshoe crab:animal
+hunting spider:animal
+hyaena:animal
+hyena:animal
+hymenopter:animal
+hymenopteran:animal
+hymenopteron:animal
+hymenopterous insect:animal
+hyrax:animal
+imago:animal
+insect:animal
+insect:animal
+insectivore:animal
+instar:animal
+jackal:animal
+jaguar:animal
+jumping plant louse:animal
+king crab:animal
+king of beasts:animal
+kingfish:animal
+lagomorph:animal
+lake trout:animal
+leaf-miner:animal
+leaf miner:animal
+legionary ant:animal
+leopard:animal
+lepidopteran:animal
+lepidopteron:animal
+lepidopterous insect:animal
+liger:animal
+lingcod:animal
+lion:animal
+little black ant:animal
+livestock:animal
+llama:animal
+louse:animal
+louse fly:animal
+mackerel:animal
+mahimahi:animal
+mecopteran:animal
+metabola:animal
+milch cow:animal
+milcher:animal
+milk cow:animal
+milker:animal
+millepede:animal
+milliped:animal
+millipede:animal
+monkfish:animal
+moo-cow:animal
+mosquito:animal
+mudcat:animal
+musk hog:animal
+myriapod:animal
+nematode:animal
+nematode worm:animal
+nemertean:animal
+nemertine:animal
+neuropteran:animal
+neuropteron:animal
+neuropterous insect:animal
+oak blight:animal
+odd-toed ungulate:animal
+odd-toed ungulate:animal
+odonate:animal
+onion louse:animal
+onion thrips:animal
+onychophoran:animal
+orb-weaving spider:animal
+orthopteran:animal
+orthopteron:animal
+orthopterous insect:animal
+ounce:animal
+ox:animal
+pachyderm:animal
+pangolin:animal
+panther:animal
+parasitic worm:animal
+peccary:animal
+pentastomid:animal
+perch:animal
+peripatus:animal
+perissodactyl:animal
+perissodactyl:animal
+perissodactyl mammal:animal
+perissodactyl mammal:animal
+pharaoh's ant:animal
+pharaoh ant:animal
+phasmid:animal
+phasmid insect:animal
+pike:animal
+pilchard:animal
+plantigrade:animal
+plantigrade mammal:animal
+platyhelminth:animal
+plecopteran:animal
+pogonophoran:animal
+pollack:animal
+pollinator:animal
+pollock:animal
+pomace fly:animal
+pompano:animal
+porgy:animal
+primate:animal
+proboscidean:animal
+proboscidian:animal
+proboscis worm:animal
+proturan:animal
+psocopterous insect:animal
+psylla:animal
+psyllid:animal
+pubic louse:animal
+puffer:animal
+pufferfish:animal
+pupa:animal
+pycnogonid:animal
+queen:animal
+ray:animal
+red poll:animal
+red rockfish:animal
+rhino:animal
+rhinoceros:animal
+ribbon worm:animal
+river horse:animal
+robber fly:animal
+rockfish:animal
+rodent:animal
+roundworm:animal
+ruminant:animal
+saber-toothed tiger:animal
+sabertooth:animal
+sailfish:animal
+salmon:animal
+salmonid:animal
+saltwater fish:animal
+sardine:animal
+scaly anteater:animal
+sciara:animal
+sciarid:animal
+scup:animal
+sea bass:animal
+sea bream:animal
+sea spider:animal
+sea squab:animal
+segmented worm:animal
+shad:animal
+shaft louse:animal
+shark:animal
+slave-maker:animal
+slave-making ant:animal
+slave ant:animal
+snapper:animal
+snow leopard:animal
+sole:animal
+speckled trout:animal
+spider:animal
+spiny-headed worm:animal
+springtail:animal
+steer:animal
+stirk:animal
+stock:animal
+stone fly:animal
+stonefly:animal
+sucker:animal
+sucking louse:animal
+sunfish:animal
+swine:animal
+swordfish:animal
+symphilid:animal
+tapir:animal
+tarantula:animal
+tardigrade:animal
+telsontail:animal
+termite:animal
+theridiid:animal
+thrips:animal
+thysanopter:animal
+thysanopteron:animal
+thysanopterous insect:animal
+thysanuran insect:animal
+thysanuron:animal
+tiger:animal
+tiglon:animal
+tigon:animal
+tobacco thrips:animal
+tongue worm:animal
+trap-door spider:animal
+tree shrew:animal
+trichopteran:animal
+trichopteron:animal
+trichopterous insect:animal
+trilobite:animal
+trout:animal
+true cat:animal
+tuna:animal
+tuna fish:animal
+tunny:animal
+two-winged insects:animal
+uintathere:animal
+unguiculate:animal
+unguiculate mammal:animal
+ungulate:animal
+ungulate:animal
+velvet worm:animal
+vicuna:animal
+weakfish:animal
+web spinner:animal
+white ant:animal
+whitefish:animal
+whiting:animal
+wild dog:animal
+wolf:animal
+wolf spider:animal
+wood ant:animal
+woodworm:animal
+worker:animal
+worm:animal
+yearling:animal
+old squaw:animal

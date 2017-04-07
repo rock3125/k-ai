@@ -1,0 +1,16 @@
+Flask>=0.12
+Flask-Cors>=3.0.2
+nltk>=3.2.2
+numpy>=1.12.0
+scipy>=0.18.1
+spacy>=1.6.0
+
+gunicorn
+gevent
+keras
+sumy
+h5py
+tensorflow
+pyaudio
+SpeechRecognition
+gTTS

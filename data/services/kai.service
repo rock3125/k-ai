@@ -1,0 +1,14 @@
+[Unit]
+Description=KAI System
+After=cassandra.service
+
+# Ubuntu systemd service, lives in /lib/systemd/system/multi-user.target.wants/
+
+[Service]
+User=kai
+Type=forking
+ExecStart=/opt/kai/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

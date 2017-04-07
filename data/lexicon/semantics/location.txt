@@ -1,0 +1,477 @@
+Earth:location
+accountancy:location
+accounting:location
+acreage:location
+advertising:location
+agency:location
+agribusiness:location
+agriculture:location
+aisle:location
+anchorage:location
+anchorage ground:location
+anechoic chamber:location
+antechamber:location
+anteroom:location
+appointment:location
+apposition:location
+area:location
+area of cardiac dullness:location
+arena:location
+areola:location
+art gallery:location
+auditorium:location
+back room:location
+baggage claim:location
+bakehouse:location
+bakery:location
+bakeshop:location
+balk:location
+ballroom:location
+bar:location
+barroom:location
+base:location
+bath:location
+bathroom:location
+baulk:location
+bed-ground:location
+bed ground:location
+bedchamber:location
+bedground:location
+bedroom:location
+beehive:location
+belfry:location
+bema:location
+berth:location
+big business:location
+billet:location
+billiard hall:location
+billiard parlor:location
+billiard parlour:location
+billiard room:location
+billiard saloon:location
+bilocation:location
+biz:location
+blank space:location
+block:location
+boardroom:location
+box:location
+breakfast area:location
+breakfast nook:location
+breathing room:location
+breathing space:location
+broadcast area:location
+broken home:location
+brokerage:location
+brokerage house:location
+building:location
+bullpen:location
+business:location
+business firm:location
+butchering:location
+butchery:location
+calling:location
+can:location
+cardroom:location
+career:location
+carrier:location
+catering:location
+cell:location
+central:location
+chain:location
+chamber:location
+chancel:location
+checkroom:location
+choir:location
+city block:location
+classroom:location
+clean room:location
+clear:location
+clearance:location
+cleavage:location
+cliff dwelling:location
+cloakroom:location
+closet:location
+clubroom:location
+coatroom:location
+colliery:location
+collocation:location
+common carrier:location
+compartment:location
+condo:location
+condominium:location
+confectionery:location
+conference room:location
+conjugal family:location
+construction:location
+control room:location
+corner:location
+cortical area:location
+cortical region:location
+council chamber:location
+court:location
+courtroom:location
+courtyard:location
+craft:location
+creamery:location
+cubby:location
+cubbyhole:location
+cubicle:location
+cutting room:location
+dance hall:location
+dance palace:location
+danger:location
+darkroom:location
+dead-air space:location
+dealership:location
+den:location
+dinette:location
+dining-room:location
+dining area:location
+dining room:location
+disaster area:location
+discount business:location
+distaff:location
+domicile:location
+door:location
+dressing room:location
+drill site:location
+durbar:location
+dwell:location
+echo sounding:location
+echolocation:location
+employee-owned business:location
+employee-owned enterprise:location
+employment:location
+engine room:location
+engineering:location
+entrance hall:location
+epigastrium:location
+erasure:location
+erogenous zone:location
+exchange:location
+extended family:location
+factory farm:location
+family circle:location
+farm:location
+farming:location
+field:location
+field of operation:location
+finance:location
+fingering:location
+fireside:location
+firm:location
+fish farm:location
+fishery:location
+fishing:location
+fixer-upper:location
+floor:location
+footprint:location
+forge:location
+foster family:location
+foster home:location
+fovea:location
+fovea centralis:location
+foyer:location
+franchise:location
+free port:location
+free zone:location
+front:location
+front room:location
+furnace room:location
+gallery:location
+game:location
+gasworks:location
+ginmill:location
+glassworks:location
+goalmouth:location
+gray area:location
+greenroom:location
+grey area:location
+groin:location
+guardroom:location
+half-moon:location
+hall:location
+hangout:location
+haunt:location
+headroom:location
+headway:location
+hearth:location
+here:location
+hermitage:location
+hideaway:location
+home:location
+home away from home:location
+home from home:location
+homestead:location
+hospital room:location
+house:location
+houseroom:location
+hunting ground:location
+hypochondrium:location
+implantation:location
+indian lodge:location
+industry:location
+inguen:location
+interposition:location
+ironworks:location
+jail cell:location
+job:location
+john:location
+jungle:location
+juxtaposition:location
+kingdom:location
+kitchen:location
+lab:location
+laboratory:location
+lake dwelling:location
+land:location
+land-office business:location
+land area:location
+lap:location
+laundry:location
+lav:location
+lavatory:location
+lawcourt:location
+lay-by:location
+layby:location
+lebensraum:location
+left-luggage office:location
+library:location
+line:location
+line of business:location
+living-room:location
+living room:location
+living space:location
+lobby:location
+location:location
+locker room:location
+lodge:location
+loins:location
+lounge:location
+lumberyard:location
+lunula:location
+lunule:location
+macula:location
+macula lutea:location
+macular area:location
+maker:location
+manor hall:location
+manufacture:location
+manufacturer:location
+manufacturing business:location
+medium:location
+menage a trois:location
+messuage:location
+metier:location
+middle:location
+midriff:location
+midsection:location
+nave:location
+no-go area:location
+no man's land:location
+nook:location
+nuclear family:location
+occasions:location
+office:location
+open:location
+orchestra pit:location
+orientation:location
+outer space:location
+oyster bank:location
+oyster bed:location
+oyster park:location
+packaging:location
+palm:location
+panopticon:location
+parafovea:location
+parking:location
+parlor:location
+parlour:location
+partnership:location
+patio:location
+patronage:location
+peanut gallery:location
+perineum:location
+photography:location
+picture gallery:location
+pile dwelling:location
+piscary:location
+pit:location
+place:location
+plane section:location
+planting:location
+point:location
+political arena:location
+political sphere:location
+poolroom:location
+position:location
+post:location
+presence chamber:location
+preserve:location
+press gallery:location
+printing:location
+prison cell:location
+privy:location
+processor:location
+profession:location
+province:location
+proving ground:location
+pubes:location
+pubic region:location
+publication:location
+publicizing:location
+publishing:location
+pull-off:location
+quad:location
+quadrangle:location
+quadrant:location
+quick:location
+rain shadow:location
+rathole:location
+reading room:location
+real-estate business:location
+realm:location
+rec room:location
+reception room:location
+recreation room:location
+refuge:location
+repair:location
+repositioning:location
+research lab:location
+research laboratory:location
+resort:location
+responsibility:location
+rest area:location
+rest stop:location
+retreat:location
+ring of color:location
+room:location
+rope yard:location
+ropewalk:location
+rotunda:location
+roundhouse:location
+sacristy:location
+safety:location
+saloon:location
+salt mine:location
+sanctuary:location
+scene:location
+schoolroom:location
+schtick:location
+schtik:location
+science lab:location
+science laboratory:location
+scriptorium:location
+scullery:location
+sea room:location
+seating:location
+seating area:location
+seating room:location
+seats:location
+second balcony:location
+section:location
+semi-detached house:location
+set:location
+sewing room:location
+shipbuilder:location
+shipping:location
+shipping room:location
+shipyard:location
+shop:location
+shop floor:location
+shower room:location
+shrubbery:location
+shtick:location
+shtik:location
+sick berth:location
+sickbay:location
+sickroom:location
+side:location
+sitting room:location
+situation:location
+sleeping room:location
+smithy:location
+smoking room:location
+snug:location
+snuggery:location
+sodom:location
+solarium:location
+sole:location
+somewhere:location
+space:location
+sport:location
+spot:location
+squad room:location
+staging area:location
+stamping ground:location
+standing room:location
+steam bath:location
+steam room:location
+storage:location
+storage room:location
+storage space:location
+storeroom:location
+stowage:location
+stratification:location
+studio:location
+study:location
+sun lounge:location
+sun parlor:location
+sun parlour:location
+sun porch:location
+sunporch:location
+sunroom:location
+superposition:location
+surgery:location
+tank farm:location
+tannery:location
+taproom:location
+telephone exchange:location
+television room:location
+terrace:location
+territory:location
+test bed:location
+test room:location
+testing room:location
+thenar:location
+there:location
+threshing floor:location
+toilet:location
+torture chamber:location
+tourism:location
+touristry:location
+trade:location
+trading floor:location
+transport:location
+transportation:location
+treadmill:location
+turnaround:location
+tv room:location
+underperformer:location
+upper balcony:location
+vacation home:location
+vapor bath:location
+vapour bath:location
+venture:location
+vestibule:location
+vestry:location
+vocation:location
+waist:location
+waistline:location
+waiting area:location
+waiting room:location
+walk-in:location
+war room:location
+waterworks:location
+whereabouts:location
+white room:location
+winner's circle:location
+work:location
+workplace:location
+workroom:location
+workshop:location
+yellow spot:location
+yurt:location
+beach:location
+harbour:location
+old country:location

@@ -1,0 +1,28 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# folders
+#
+  - name: create KAI root folder
+    file: path={{ kai_base }} state=directory owner=kai group=kai
+
+  - name: create KAI spacy folder
+    file: path={{ kai_base }}/spacy state=directory owner=kai group=kai
+
+  - name: create Spacy data folder
+    file: path=/opt/spacy state=directory owner=kai group=kai
+
+  - name: create KAI log folder
+    file: path=/var/log/kai state=directory owner=kai group=kai
+
+  - name: create KAI import software folder
+    file: path=/import/software state=directory owner=kai group=kai
+

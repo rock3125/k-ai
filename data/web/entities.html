@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2017 by Peter de Vocht
+  ~
+  ~ All rights reserved. No part of this publication may be reproduced, distributed, or
+  ~ transmitted in any form or by any means, including photocopying, recording, or other
+  ~ electronic or mechanical methods, without the prior written permission of the publisher,
+  ~ except in the case of brief quotations embodied in critical reviews and certain other
+  ~ noncommercial uses permitted by copyright law.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>K/AI entities</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="logo-offset">
+    <a href="/" onclick="utility.signout()"><img src="images/logo.png" class="hero-logo" style="width: 75px;"></a>
+</div>
+<div id="queryService" class="container-class" data-ng-controller="QueryManager">
+
+    <div class="container">
+        <ul class="nav nav-tabs nav-kaiHeader">
+            <li><a data-toggle="tab" onclick="utility.goto('query.html');" href="">QUERY</a></li>
+            <li><a data-toggle="tab" onclick="utility.goto('kb.html');" href="">KNOWLEDGE BASE</a></li>
+            <li class="active"><a data-toggle="tab" href="">ENTITIES</a></li>
+        </ul>
+    </div>
+
+    <div class="viki-background-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-5">
+                    <br/>
+                    <br />
+                    <label for="txtFindEntity"></label>
+                    <input placeholder="entity name" id="txtFindEntity" type="text" onkeypress="entities.find_keypress(event)" class="sr-final form-control text-kaisearch" />
+                    <br/>
+                    <div class="btn-group" role="group" style="width: 250px;">
+                        <button type="button" class="btn btn-primary btn-kaisearch" onclick="entities.find()" style="height: 34px">
+                            <span class="glyphicon glyphicon-search" title="find entity" aria-hidden="true"> find</span>
+                        </button>
+                        <button type="button" class="btn btn-kaiadd" onclick="entities.create_new_entity()" style="margin-left: 50px; height: 32px;">
+                            <span class="glyphicon glyphicon-plus" title="add new entity" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                <table id="entityTable" class="table table-striped table-hover table-condensed">
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="createEntity" class="modal fade modal-offset-top-2" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="createEntityTitle" class="modal-title">ADD ENTITY</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>ENTITY NAME</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="entity_name" class="sr-only">name</label>
+                        <input type="text" class="form-control text-kaisearch" data-ng-disabled="disabled"
+                               id="entity_name" name="reg_entity_name" placeholder="Entity name">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>SEMANTIC</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="entity_semantic" class="sr-only">name</label>
+                        <input type="text" class="form-control text-kaisearch" data-ng-disabled="disabled"
+                               id="entity_semantic" name="reg_entity_semantic" placeholder="Field semantic (e.g. person, man, woman, food, vehicle, etc.)">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+                <div class="row"><br/></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" onclick="entities.save_entity()">SAVE</button>
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- modal error message dialog -->
+    <div id="errorMessage" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-red-header">
+                <br/>
+                <button type="button" class="close close-button" data-dismiss="modal">&times;&nbsp;&nbsp;</button>
+                <h4 class="modal-title">&nbsp;&nbsp;ERROR</h4>
+                <br/>
+            </div>
+            <div class="modal-body">
+                <div id="lblErrorMessage"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for confirm yes/no-->
+    <div id="confirmMessage" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" id="confirmCancel1" onclick="">&times;&nbsp;&nbsp;</button>
+                <h4 class="modal-title">&nbsp;&nbsp;PLEASE CONFIRM</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div id="lblConfirmMessage"></div>
+                </div>
+                <div class="row"><br/></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" id="confirmAck">CONFIRM!</button>
+                    <button type="button" class="btn btn-kaisearch-alt" id="confirmCancel2">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/utility.js"></script>
+<script src="js/entities.js"></script>
+
+<script>
+    utility.checkSession();
+    $("#txtFindEntity").focus();
+</script>
+
+</body>
+</html>
+

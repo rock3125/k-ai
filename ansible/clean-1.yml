@@ -1,0 +1,55 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+
+#
+# REMOVE most of KAI from the cluster machines
+#        folders /opt, /import, /var/log/kai
+#        services all
+#
+
+---
+- hosts: kai-cluster-one
+  remote_user: root
+
+  tasks:
+
+  - name: stop kai service
+    shell: systemctl stop kai
+
+  - name: stop spacy service
+    shell: systemctl stop spacy
+
+  - name: stop cassandra service
+    shell: systemctl stop cassandra
+
+
+  - name: remove all /opt folders
+    file: path=/opt state=absent
+
+  - name: re-add /opt folder
+    file: path=/opt state=directory owner=root group=root
+
+  - name: remove /var/log/kai folder
+    file: path=/var/log/kai state=absent
+
+  - name: remove /import folder
+    file: path=/import state=absent
+
+  - name: removing kai service
+    file: path=/lib/systemd/system/kai.service state=absent
+
+  - name: removing cassandra service
+    file: path=/lib/systemd/system/cassandra.service state=absent
+
+  - name: removing spacy service
+    file: path=/lib/systemd/system/spacy.service state=absent
+
+  - name: reloading services
+    shell: systemctl daemon-reload

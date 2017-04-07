@@ -1,0 +1,978 @@
+abator:person
+abjurer:person
+abomination:person
+abstainer:person
+abstinent:person
+academic:person
+achiever:person
+acquaintance:person
+acquirer:person
+active:person
+actor:person
+adjudicator:person
+adjutant:person
+admirer:person
+adonis:person
+adoptee:person
+adult:person
+advisee:person
+advocate:person
+advocator:person
+affiant:person
+African:person
+aggregator:person
+agnostic:person
+aide-de-camp:person
+aide:person
+air force officer:person
+allayer:person
+amateur:person
+amazon:person
+Amerindian:person
+ancient:person
+anomaly:person
+antediluvian:person
+anti-American:person
+anti:person
+ape:person
+aper:person
+applicant:person
+applier:person
+appointee:person
+appointment:person
+appreciator:person
+apprehender:person
+Aquarius:person
+archaist:person
+Archer:person
+Aries:person
+arrogator:person
+artilleryman:person
+assessee:person
+assimilator:person
+asthmatic:person
+attempter:person
+attorney general:person
+aunt:female
+authority:person
+autodidact:person
+B-girl:female
+baboo:person
+babu:person
+baby boomer:person
+baby buster:person
+baby:person
+bachelor girl:female
+bachelor:person
+bachelorette:female
+back-number:person
+bad guy:male
+bad person:person
+baggage:person
+Balance:person
+baldhead:person
+baldpate:person
+baldy:person
+balker:person
+ball-breaker:person
+ball-buster:person
+bar girl:female
+bas bleu:person
+bather:person
+battler:person
+baulker:person
+bawd:person
+beard:person
+beau:person
+beauty:person
+bedfellow:person
+beguiler:person
+beholder:person
+belligerent:person
+bereaved person:person
+bereaved:person
+best:person
+bey:person
+biter:person
+Black man:male
+Black person:person
+Black woman:female
+Black:person
+black:person
+blackamoor:person
+blogger:person
+bloke:person
+blond:person
+blonde:person
+bluecoat:person
+bluejacket:person
+bluestocking:person
+bobby:person
+bodybuilder:person
+bomber:person
+boomer:person
+border patrolman:person
+boy:male
+boyfriend:male
+bozo:person
+brass hat:person
+bridesmaid:female
+broad:person
+brother:male
+bruiser:person
+brunet:person
+brunette:person
+Bull:person
+bull:person
+bullfighter:person
+buster:person
+Cancer:person
+candidate:person
+cannoneer:person
+Capricorn:person
+captor:person
+capturer:person
+cardholder:person
+carrottop:person
+case:person
+cashier:person
+castrate:person
+cat:person
+Caucasian:person
+celebrant:person
+celebrater:person
+celebrator:person
+censor:person
+centenarian:person
+chameleon:person
+changer:person
+charmer:person
+checker:person
+chess piece:person
+chessman:person
+chief of staff:person
+child:person
+chooser:person
+chutzpanik:person
+Cinderella:person
+closer:person
+cloud seeder:person
+clumsy person:person
+cobber:person
+cocotte:person
+coddler:person
+collector:person
+color-blind person:person
+combatant:person
+comforter:person
+commandant:person
+commander:person
+commanding officer:person
+commando:person
+commissioned officer:person
+common man:person
+common person:person
+commoner:person
+communicator:person
+compeer:person
+complexifier:person
+compulsive:person
+computer user:person
+comrade:person
+conscript:person
+constable:person
+contemplative:person
+contestant:person
+contriver:person
+controller:person
+controversialist:person
+convert:person
+cop:person
+copper:person
+copycat:person
+coquette:person
+counter:person
+counterterrorist:person
+coward:person
+Crab:person
+crawler:person
+creator:person
+creature:person
+creditor:person
+creeper:person
+cripple:person
+cross-dresser:person
+curmudgeon:person
+cyprian:person
+dad:person
+dada:male
+daddy:male
+dame:female
+dancer:person
+date:person
+deaf person:person
+deb:person
+debaser:person
+debitor:person
+debtor:person
+debutante:person
+defecator:person
+degrader:person
+delayer:person
+Delilah:person
+deliverer:person
+demander:person
+denizen:person
+deputy sheriff:person
+deputy:person
+desk officer:person
+detective:person
+devil dog:person
+deviser:person
+dieter:person
+differentiator:person
+discriminator:person
+disentangler:person
+dish:person
+disputant:person
+dissenter:person
+dissident:person
+divider:person
+divorced man:person
+dodderer:person
+dodo:person
+doer:person
+domestic partner:person
+dominatrix:person
+donna:person
+doormat:person
+dotard:person
+double:person
+doubter:person
+draftee:person
+dresser:person
+dribbler:person
+driveller:person
+drooler:person
+drug user:person
+dude:person
+dupe:person
+dweller:person
+dyslectic:person
+ectomorph:person
+effecter:person
+effector:person
+ejaculator:person
+ejector:person
+Elizabethan:person
+emotional person:person
+emulator:person
+enchantress:person
+endomorph:person
+enjoyer:person
+enlisted person:person
+enrollee:person
+entertainer:person
+equal:person
+eristic:person
+escort:person
+Esq:person
+Esquire:person
+essayer:person
+ethnic:person
+eunuch:person
+ex-husband:male
+ex-serviceman:person
+ex-wife:female
+ex:person
+exboyfriend:person
+excuser:person
+executive officer:person
+expectorator:person
+experimenter:person
+expert:person
+exponent:person
+extravert:person
+extrovert:person
+eyeful:person
+face:person
+faculty member:person
+faddist:person
+faller:person
+fancy woman:female
+fastener:person
+father figure:male
+father surrogate:male
+father-figure:male
+father-in-law:male
+fellow:person
+female person:female
+female:female
+femme fatale:female
+fiduciary:person
+fighter:person
+fille:person
+first mate:person
+first person:person
+first-rater:person
+Fish:person
+flatfoot:person
+fleer:person
+flirt:person
+fogey:person
+fogy:person
+follower:person
+forerunner:person
+forgiver:person
+fossil:person
+free agent:person
+free spirit:person
+freewheeler:person
+friend:person
+fugitive:person
+fuzz:person
+gainer:person
+galoot:person
+gambler:person
+gaoler:person
+gatekeeper:person
+gatherer:person
+gay:person
+geezer:person
+geisha girl:female
+geisha:female
+gem:person
+Gemini:person
+gendarme:person
+gentile:person
+gentleman:person
+gentlewoman:person
+girl:female
+girlfriend:female
+Goat:person
+gold digger:person
+golden boy:male
+good guy:male
+good person:person
+granter:person
+grass widower:person
+gravida:person
+graybeard:person
+greeter:person
+greybeard:male
+grinner:person
+groaner:person
+grownup:person
+grunter:person
+guesser:person
+guinea pig:person
+gunner:person
+guy:male
+habitant:person
+handicapped person:person
+harlot:female
+hater:person
+he-man:male
+head nurse:person
+Herr:person
+heterosexual person:person
+heterosexual:person
+hombre:male
+Homo erectus:person
+Homo habilis:person
+Homo rhodesiensis:person
+Homo sapiens neanderthalensis:person
+Homo sapiens:person
+Homo soloensis:person
+homo:male
+homophile:person
+homosexual:male
+homunculus:person
+Hooray Henry:person
+hope:person
+hoper:person
+houri:person
+housefather:male
+huddler:person
+hugger:person
+human beings:person
+human race:person
+humanity:person
+humankind:person
+humans:person
+hunk:person
+husband:male
+image:person
+imitator:person
+immune:person
+inamorata:person
+inamorato:person
+indigen:person
+indigene:person
+individualist:person
+inductee:person
+indweller:person
+inexperienced person:person
+inhabitant:person
+innocent:person
+inspector general:person
+inspector:person
+insured person:person
+insured:person
+intellect:person
+intellectual:person
+interpreter:person
+introvert:person
+investigator:person
+iron man:male
+ironman:male
+ironside:person
+jailer:person
+jailor:person
+Jat:person
+jewel:person
+jezebel:person
+jilt:person
+jumper:person
+junior:person
+juvenile person:person
+juvenile:person
+killer:person
+kink:person
+kneeler:person
+knocker:person
+knockout:person
+knower:person
+ladino:person
+lady friend:female
+lady of pleasure:female
+lady:female
+large person:person
+Latin:person
+laugher:person
+lawman:male
+learner:person
+leatherneck:person
+left-hander:person
+lefty:person
+Leo:person
+Libra:person
+lieutenant:person
+life:person
+lightning rod:person
+Lion:person
+literate person:person
+literate:person
+liver:person
+longer:person
+look-alike:person
+looker:person
+loose cannon:person
+lover:person
+lulu:person
+ma'am:female
+ma:female
+machine gunner:person
+machine:person
+macho-man:male
+madam:female
+maenad:person
+maid of honor:female
+mailer:person
+maimer:person
+malcontent:person
+male parent:male
+male person:male
+male:male
+mama:female
+mamma:female
+mammy:female
+man jack:male
+man:male
+mangler:person
+manipulator:person
+mankind:person
+mantrap:female
+Marine:person
+married:person
+masturbator:person
+match:person
+mate:person
+mater:person
+materfamilias:female
+matriarch:female
+matron:female
+measurer:person
+mediocrity:person
+mesomorph:person
+mestiza:person
+mestizo:person
+Methuselah:person
+middle-aged man:male
+middlebrow:person
+military adviser:person
+military advisor:person
+military officer:person
+military policeman:male
+military volunteer:person
+minx:female
+miracle man:male
+miracle worker:person
+misogamist:person
+miss:female
+missy:female
+mixed-blood:person
+modern:person
+modifier:person
+mollycoddler:person
+mom:female
+momma:female
+mommy:female
+money dealer:person
+money handler:person
+monolingual:person
+Monsieur:person
+mother figure:female
+mother hen:female
+mother:female
+motorcycle cop:person
+motorcycle policeman:male
+Mountie:person
+mouse:female
+mover and shaker:person
+MP:person
+mum:female
+mummy:female
+muscle builder:person
+muscle-builder:person
+musclebuilder:person
+muscleman:male
+mutilator:person
+namer:person
+namesake:person
+nanny:person
+narc:person
+narcotics agent:person
+nark:person
+national:person
+Native American:person
+native:person
+navigator:person
+navy man:male
+Neandertal man:person
+Neandertal:person
+Neanderthal man:person
+Neanderthal:person
+needer:person
+neglecter:person
+Negro:person
+Negroid:person
+neighbor:person
+neighbour:person
+neutral:person
+nonagenarian:person
+noncom:person
+noncombatant:person
+noncommissioned officer:person
+noncompliant:person
+nondescript:person
+nondrinker:person
+nonmember:person
+nonparticipant:person
+nonpartisan:person
+nonpartizan:person
+nonperson:person
+nonreligious person:person
+nonresident:person
+nonsmoker:person
+nonworker:person
+nude person:person
+nude:person
+nullipara:person
+nurse:person
+nursemaid:female
+nurser:person
+nymph:female
+nymphet:female
+objector:person
+observer:person
+occultist:person
+occupier:person
+octogenarian:person
+officer:person
+old boy:male
+old codger:male
+old geezer:male
+old guard:person
+old hand:person
+old lady:female
+old maid:female
+old man of the mountain:male
+old man:male
+old master:male
+old person:person
+old stager:person
+old woman:female
+onanist:person
+opener:person
+optimist:person
+orphan:person
+ostrich:person
+ouster:person
+outcaste:person
+outdoorsman:male
+owner:person
+pa:male
+pal:male
+pamperer:person
+pansexual:person
+papa:male
+pappa:male
+para I:person
+pardoner:person
+partner:person
+party:person
+passer:person
+pater:person
+paterfamilias:male
+patriarch:male
+patrolman:male
+peach:person
+peer:person
+perceiver:person
+percher:person
+percipient:person
+person of color:person
+person of colour:person
+person:person
+persona non grata:person
+personage:person
+personification:person
+perspirer:person
+Peter Pan:person
+philanderer:person
+philosopher:person
+picker:person
+pig:person
+Pisces:person
+pisser:person
+planner:person
+playfellow:male
+playmate:female
+police constable:person
+police detective:person
+police lieutenant:person
+police matron:person
+police officer:person
+police sergeant:person
+policeman:male
+policewoman:female
+pop:male
+posseman:male
+possessor:person
+posturer:person
+powderer:person
+precursor:person
+preserver:person
+prickteaser:person
+primipara:person
+primitive person:person
+primitive:person
+prison guard:person
+probation officer:person
+prof:person
+professor:person
+proponent:person
+propositus:person
+prospect:person
+prostitute:person
+protester:person
+public relations person:person
+puerpera:person
+purser:person
+pursuer:person
+pussycat:person
+quadripara:person
+quarter:person
+quester:person
+quintipara:person
+quitter:person
+radical:person
+Ram:person
+Ranger:person
+ranger:person
+ravisher:person
+realist:person
+recoverer:person
+rectifier:person
+red-header:person
+redhead:person
+redheader:person
+registrant:person
+relation:person
+relative:person
+reliever:person
+repeater:person
+rescuer:person
+rester:person
+restrainer:person
+revenant:person
+Rhodesian man:person
+rich person:person
+right hander:person
+right-hander:person
+righthander:person
+riser:person
+romanticist:person
+romper:person
+roundhead:person
+runaway:person
+rusher:person
+Sagittarius:person
+sailing master:person
+sailor boy:male
+sailor:person
+saluter:person
+Samson:person
+saver:person
+scholar:person
+Scorpio:person
+Scorpion:person
+scourge:person
+scrag:person
+scrapper:person
+scratcher:person
+screw:person
+searcher:person
+second person:person
+second-rater:person
+seeder:person
+seeker:person
+segregate:person
+selector:person
+self:person
+Senhor:person
+sensualist:person
+sentimentalist:person
+septuagenarian:person
+sergeant at arms:person
+sergeant:person
+serjeant-at-arms:person
+sex object:person
+sexagenarian:person
+shaker:person
+shaver:person
+sheriff:person
+shiksa:person
+shikse:person
+shipboard soldier:person
+shitter:person
+shoofly:person
+showman:male
+signatory:person
+signer:person
+significant other:person
+signior:person
+signor:person
+signore:person
+simple:person
+simpleton:person
+sir:male
+siren:person
+sister:female
+six-footer:person
+skidder:person
+skin and bones:person
+Slav:person
+slave:person
+slayer:person
+sleepyhead:person
+slider:person
+slipper:person
+slobberer:person
+sloucher:person
+small person:person
+smasher:person
+smiler:person
+smotherer:person
+sneezer:person
+sniffer:person
+sniffler:person
+sniveler:person
+snuffer:person
+snuffler:person
+social dancer:person
+socialiser:person
+socializer:person
+solicitor general:person
+sort:person
+sounding board:person
+southpaw:person
+speed cop:person
+sphinx:person
+spitter:person
+spoiler:person
+sport:person
+sporting lady:female
+spousal equivalent:person
+spouse equivalent:person
+sprawler:person
+spurner:person
+squint-eye:person
+squinter:person
+squirmer:person
+state trooper:person
+steward:person
+stiff:person
+stifler:person
+stigmatic:person
+stigmatist:person
+stooper:person
+straight person:person
+straight:person
+strapper:person
+striper:person
+struggler:person
+stud:male
+stunner:person
+subject:person
+substance abuser:person
+succeeder:person
+success:person
+supercargo:person
+supermom:female
+supernumerary:person
+surrenderer:person
+surrogate mother:person
+survivalist:person
+survivor:person
+suspect:person
+swain:person
+sweater:person
+sweetheart:female
+sylph:person
+tagger:person
+tapper:person
+tart:female
+Tarzan:person
+Taurus:person
+tease:female
+tec:person
+tempter:male
+temptress:female
+termer:person
+terror:person
+testate:person
+testator:person
+Texas Ranger:person
+thin person:person
+third person:person
+third-rater:person
+thirster:person
+threat:person
+thrower:person
+tiger:person
+topper:person
+toreador:person
+totemist:person
+toucher:person
+tovarich:person
+tovarisch:person
+traffic cop:person
+transexual:person
+transfer:person
+transferee:person
+transsexual:person
+transvestite:person
+trier:person
+trooper:person
+turner:person
+turnkey:person
+Twin:person
+tyrant:person
+uncle:male
+undoer:person
+unfastener:person
+unfortunate person:person
+unfortunate:person
+unmarried man:male
+unmarried woman:female
+unperson:person
+unraveler:person
+unraveller:person
+unskilled person:person
+untier:person
+unusual person:person
+unwelcome person:person
+urinator:person
+user:person
+vamp:person
+vamper:person
+vanisher:person
+vestal:person
+vet:person
+veteran soldier:person
+veteran:person
+victim:person
+Victorian:person
+virago:person
+Virgin:person
+Virgo:person
+visionary:person
+visually impaired person:person
+voider:person
+voluntary:person
+volunteer:person
+Wac:person
+waiter:person
+waker:person
+walk-in:person
+wanter:person
+ward:person
+warden:person
+warder:person
+warrant officer:person
+watcher:person
+Water Bearer:person
+weakling:person
+wealthy person:person
+weight gainer:person
+welcomer:person
+white man:male
+white person:person
+white woman:female
+white:person
+whore:female
+widow woman:female
+widow:female
+widower:person
+widowman:person
+wife:female
+wiggler:person
+wight:person
+windower:male
+winker:person
+winner:person
+withholder:person
+witness:person
+woman of the street:female
+woman:female
+womaniser:person
+womanizer:person
+wonder boy:male
+wonder woman:female
+worker:person
+working girl:female
+world:person
+worldling:person
+wriggler:person
+wuss:person
+yawner:person
+yearner:person
+yellow man:male
+yellow woman:female
+yielder:person
+young buck:male
+young lady:female
+young man:male
+young woman:female

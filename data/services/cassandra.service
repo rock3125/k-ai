@@ -1,0 +1,15 @@
+[Unit]
+Description=KAI Cassandra
+After=network.target
+
+[Service]
+Type=forking
+Environment=JAVA_HOME=/opt/jdk
+PIDFile=/var/lib/cassandra/cassandra.pid
+User=kai
+Group=kai
+ExecStart=/opt/cassandra/bin/cassandra -p /var/lib/cassandra/cassandra.pid
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

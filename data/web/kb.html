@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2017 by Peter de Vocht
+  ~
+  ~ All rights reserved. No part of this publication may be reproduced, distributed, or
+  ~ transmitted in any form or by any means, including photocopying, recording, or other
+  ~ electronic or mechanical methods, without the prior written permission of the publisher,
+  ~ except in the case of brief quotations embodied in critical reviews and certain other
+  ~ noncommercial uses permitted by copyright law.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>K/AI knowledge base manager</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="logo-offset">
+    <a href="/" onclick="utility.signout()"><img src="images/logo.png" class="hero-logo" style="width: 75px;"></a>
+</div>
+<div id="kbService" class="container-class" data-ng-controller="KBManager">
+
+    <div class="container">
+
+        <ul class="nav nav-tabs nav-kaiHeader">
+            <li><a data-toggle="tab" onclick="utility.goto('query.html');" href="">QUERY</a></li>
+            <li class="active"><a data-toggle="tab" href="">KNOWLEDGE BASE</a></li>
+            <li><a data-toggle="tab" onclick="utility.goto('entities.html');" href="">ENTITIES</a></li>
+        </ul>
+    </div>
+
+    <div class="viki-background-white">
+        <div class="container">
+
+            <br />
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <h4>Structured Entities</h4>
+                    <table id="entityTable" class="table table-striped table-hover table-condensed">
+                        <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-kaiadd" onclick="kb.create_new_entity()" style="height: 32px;">
+                            <span class="glyphicon glyphicon-plus" title="add a new structured entity" aria-hidden="true"></span>
+                        </button>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td><!--<ul id="pagination" class="pagination btn-pagination"></ul>--></td>
+                </tr>
+            </table>
+
+            <div class="row"><br/></div>
+            <div class="row"><br/></div>
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <h4>Unstructured Entities</h4>
+                    <table id="unEntityTable" class="table table-striped table-hover table-condensed">
+                        <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-kaiadd" onclick="unkb.create_new_un_entity()" style="height: 32px;">
+                            <span class="glyphicon glyphicon-plus" title="add a new unstructured entity" aria-hidden="true"></span>
+                        </button>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td><!--<ul id="pagination" class="pagination btn-pagination"></ul>--></td>
+                </tr>
+            </table>
+
+            <div class="row"><br/></div>
+            <div class="row"><br/></div>
+
+        </div>
+    </div>
+
+
+    <!-- create structured entity dialog -->
+    <div id="createEntity" tabindex="-1" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="downloadlabel">STRUCTURED ENTITY</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>ENTITY NAME</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="entity_name" class="sr-only">entity</label>
+                        <input type="text" class="form-control text-kaisearch" data-ng-disabled="disabled"
+                               id="entity_name" name="reg_entity_name" placeholder="name of the entity">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+                <div class="row">
+                    <table id="fieldTable" class="table table-striped table-hover table-condensed">
+                        <thead>
+                        <tr>
+                            <th>FIELDS</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-kaiadd" onclick="kb.create_new_field()" style="height: 32px;">
+                        <span class="glyphicon glyphicon-plus" title="add new field" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="row"><br/></div>
+
+
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" onclick="kb.save_entity();">SAVE</button>
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal for unstructured entities -->
+    <div id="createUnstructuredEntity" tabindex="-1" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">UNSTRUCTURED ENTITY</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>ENTITY DESCRIPTION</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="un_entity_name" class="sr-only">entity</label>
+                        <input type="text" class="form-control text-kaisearch" data-ng-disabled="disabled"
+                               id="un_entity_name" name="reg_entity_name" placeholder="name of the unstructured entity">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>ENTITY TEXT</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="un_entity_text" class="sr-only">language</label>
+                        <textarea class="form-control" id="un_entity_text" data-ng-model="language" cols="60" rows="15"
+                                  placeholder="entity's text description, knowledge article"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" onclick="unkb.save_un_entity();">SAVE</button>
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create a new field / edit existing dialog -->
+    <div id="createField" class="modal fade modal-offset-top-2" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">ADD FIELD</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>FIELD NAME</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="field_name" class="sr-only">name</label>
+                        <input type="text" class="form-control text-kaisearch" data-ng-disabled="disabled"
+                               id="field_name" name="reg_field_name" placeholder="Field name">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>SEMANTIC</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="field_semantic" class="sr-only">name</label>
+                        <input type="text" class="form-control text-kaisearch" data-ng-disabled="disabled"
+                               id="field_semantic" name="reg_field_semantic" placeholder="Field semantic (e.g. person, man, woman, food, vehicle, etc.)">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>AI/ML TEMPLATE(S)</b>
+                    </div>
+                    <div class="col-md-9">
+                        <label for="aiml_text" class="sr-only">language</label>
+                        <textarea class="form-control" id="aiml_text" data-ng-model="language" cols="60" rows="5"
+                                  placeholder="Language templates, e.g. Who is *"></textarea>
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" onclick="kb.save_field()">SAVE</button>
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- upload instances -->
+    <div id="uploadInstances" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">UPLOAD INSTANCES</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="documentUpload" class="sr-only">select json document for instance upload</label>
+                        <input type="file" id="documentUpload" onchange="kb.prepareUpload(event);" class="btn btn-default" name="file">
+                    </div>
+                </div>
+                <div class="row"><br/></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" onclick="kb.upload_file()">UPLOAD</button>
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- modal error message dialog -->
+    <div id="errorMessage" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-red-header">
+                <br/>
+                <button type="button" class="close close-button" data-dismiss="modal">&times;&nbsp;&nbsp;</button>
+                <h4 class="modal-title">&nbsp;&nbsp;ERROR</h4>
+                <br/>
+            </div>
+            <div class="modal-body">
+                <div id="lblErrorMessage"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch-alt" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for confirm yes/no-->
+    <div id="confirmMessage" class="modal fade modal-offset-top" data-backdrop="static" role="dialog">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close close-button" id="confirmCancel1" onclick="">&times;&nbsp;&nbsp;</button>
+                <h4 class="modal-title">&nbsp;&nbsp;PLEASE CONFIRM</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div id="lblConfirmMessage"></div>
+                </div>
+                <div class="row"><br/></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="button" class="btn btn-kaisearch" id="confirmAck">CONFIRM!</button>
+                    <button type="button" class="btn btn-kaisearch-alt" id="confirmCancel2">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- busy spinning wheel for instance upload -->
+    <div id="busy" class="modal fade modal-offset-top loader" data-backdrop="static" role="dialog">
+        <div id="loader"></div>
+    </div>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/utility.js"></script>
+<script src="js/kb_entites.js"></script>
+<script src="js/kb_unentities.js"></script>
+
+<script>
+    if (utility.checkSession()) {
+        kb.list_kb_entities();
+        unkb.list_un_entities();
+    }
+</script>
+
+</body>
+</html>
+

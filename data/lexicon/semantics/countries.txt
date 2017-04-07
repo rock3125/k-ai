@@ -1,0 +1,247 @@
+Afghanistan:country
+Akrotiri:country
+Albania:country
+Algeria:country
+American Samoa:country
+Andorra:country
+Angola:country
+Anguilla:country
+Antarctica:country
+Antigua and Barbuda:country
+Antigua:country
+Barbuda:country
+Argentina:country
+Armenia:country
+Aruba:country
+Ashmore and Cartier Islands:country
+Cartier Islands:country
+Ashmore:country
+Australia:country
+Austria:country
+Azerbaijan:country
+the Bahamas:country
+Bahrain:country
+Bangladesh:country
+Bassas da India:country
+Bassas:country
+Belarus:country
+Belgium:country
+Belize:country
+Benin:country
+Bermuda:country
+Bhutan:country
+Bolivia:country
+Bosnia and Herzegovina:country
+Bosnia:country
+Herzegovina:country
+Brazil:country
+British Indian Ocean Territory:country
+British Virgin Islands:country
+Virgin Islands:country
+Brunei:country
+Bulgaria:country
+Burkina Faso:country
+Burma:country
+Burundi:country
+Cape Verde:country
+Cayman Islands:country
+Caymans:country
+Central African Republic:country
+Chad:country
+Chile:country
+China:country
+Christmas Island:country
+Democratic Republic of the Congo:country
+Congo:country
+Republic of the Congo:country
+Cook Islands:country
+Coral Sea Islands:country
+Costa Rica:country
+Cote d'Ivoire:country
+Dhekelia:country
+Djibouti:country
+Dominica:country
+Dominican Republic:country
+Ecuador:country
+Europa Island:country
+Falkland Islands:country
+Islas Malvinas:country
+Faroe Islands:country
+Fiji:country
+Gaza Strip:country:Gaza
+Georgia:country
+Germany:country
+Guatemala:country
+Guernsey:country
+Guinea:country
+Guinea-Bissau:country
+Guyana:country
+Haiti:country
+Heard Island and McDonald Islands:country
+Heard Island:country
+McDonald Islands:country
+Holy See:country:Vatican City
+Honduras:country
+Hong Kong:country
+Hungary:country
+Iceland:country
+India:country
+Indonesia:country
+Iran:country
+Iraq:country
+Ireland:country
+Isle of Man:country
+Israel:country
+Italy:country
+Jamaica:country
+Jan Mayen:country
+Japan:country
+Jersey:country
+Jordan:country
+Juan de Nova Island:country
+Juan de Nova:country
+Kazakhstan:country
+Kenya:country
+Kiribati:country
+North Korea:country
+South Korea:country
+Kuwait:country
+Kyrgyzstan:country
+Laos:country
+Latvia:country
+Lebanon:country
+Lesotho:country
+Liberia:country
+Libya:country
+Liechtenstein:country
+Lithuania:country
+Luxembourg:country
+Macau:country
+Macedonia:country
+Madagascar:country
+Malawi:country
+Malaysia:country
+Maldives:country
+Mali:country
+Malta:country
+Marshall Islands:country
+Martinique:country
+Mauritania:country
+Mauritius:country
+Mayotte:country
+Mexico:country
+Federated States of Micronesia:country
+Micronesia:country
+Moldova:country
+Monaco:country
+Mongolia:country
+Montserrat:country
+Morocco:country
+Mozambique:country
+Namibia:country
+Nauru:country
+Navassa Island:country
+Nepal:country
+the Netherlands:country
+Holland:country
+Netherlands Antilles:country
+Antilles:country
+New Caledonia:country
+New Zealand:country
+Aotearoa:country
+Nicaragua:country
+Niger:country
+Nigeria:country
+Niue:country
+Norfolk Island:country
+Northern Mariana Islands:country
+Mariana Islands:country
+Norway:country
+Oman:country
+Pakistan:country
+Palau:country
+Panama:country
+Papua New Guinea:country
+Paracel Islands:country
+Paraguay:country
+Peru:country
+Philippines:country
+Pitcairn Islands:country
+Pitcairn:country
+Poland:country
+Portugal:country
+Puerto Rico:country
+Qatar:country
+Reunion:country
+Romania:country
+Russia:country
+Rwanda:country
+Saint Helena:country
+Saint Kitts and Nevis:country
+Saint Lucia:country
+Saint Pierre and Miquelon:country
+Saint Pierre:country
+Miquelon:country
+Saint Vincent and the Grenadines:country
+Saint Vincent:country
+Grenadines:country
+Samoa:country
+Sao Tome and Principe:country
+Sao Tome:country
+Principe:country
+Saudi Arabia:country
+Senegal:country
+Serbia and Montenegro:country
+Serbia:country
+Montenegro:country
+Seychelles:country
+Sierra Leone:country
+Singapore:country
+Slovakia:country
+Svalbard:country
+Sweden:country
+Switzerland:country
+Syria:country
+Taiwan:country
+Tajikistan:country
+Tanzania:country
+Thailand:country
+Timor-Leste:country
+Timor:country
+Leste:country
+Togo:country
+Tonga:country
+Trinidad and Tobago:country
+Trinidad:country
+Tobago:country
+Tromelin Island:country
+Tunisia:country
+Turkey:country
+Turkmenistan:country
+Turks and Caicos Islands:country
+Caicos Islands:country
+Turks Islands:country
+Tuvalu:country
+Uganda:country
+United Arab Emirates:country
+UAE:country
+United Kingdom:country
+UK:country
+United States:country
+US:country
+USA:country
+America:country
+Uruguay:country
+Uzbekistan:country
+Vanuatu:country
+Venezuela:country
+Vietnam:country
+Virgin Islands:country
+Wallis and Futuna:country
+Wallis:country
+Futuna:country
+West Bank:country
+Western Sahara:country
+Yemen:country
+Zambia:country
+Zimbabwe:country

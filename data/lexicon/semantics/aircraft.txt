@@ -1,0 +1,68 @@
+aeroplane:aircraft
+aircraft:aircraft
+airliner:aircraft
+airplane:aircraft
+amphibian:aircraft
+amphibious aircraft:aircraft
+attack aircraft:aircraft
+autogiro:aircraft
+autogyro:aircraft
+balloon:aircraft
+biplane:aircraft
+bogey:aircraft
+bogie:aircraft
+bogy:aircraft
+cargo helicopter:aircraft
+chopper:aircraft
+cruise missile:aircraft
+drone:aircraft
+eggbeater:aircraft
+fighter:aircraft
+fighter aircraft:aircraft
+glider:aircraft
+gyroplane:aircraft
+hang glider:aircraft
+hangar queen:aircraft
+heavier-than-air craft:aircraft
+helicopter:aircraft
+hot-air balloon:aircraft
+hydroplane:aircraft
+jet:aircraft
+jet-propelled plane:aircraft
+jet plane:aircraft
+lighter-than-air craft:aircraft
+lingerer:aircraft
+loiterer:aircraft
+meteorological balloon:aircraft
+military plane:aircraft
+monoplane:aircraft
+multiengine airplane:aircraft
+multiengine plane:aircraft
+ornithopter:aircraft
+orthopter:aircraft
+pilotless aircraft:aircraft
+plane:aircraft
+plodder:aircraft
+potterer:aircraft
+propeller plane:aircraft
+putterer:aircraft
+radio-controlled aircraft:aircraft
+reconnaissance plane:aircraft
+sailplane:aircraft
+seaplane:aircraft
+shuttle helicopter:aircraft
+single-rotor helicopter:aircraft
+ski-plane:aircraft
+skyhook:aircraft
+slowcoach:aircraft
+slowpoke:aircraft
+stealth aircraft:aircraft
+stealth bomber:aircraft
+stealth fighter:aircraft
+stick-in-the-mud:aircraft
+straggler:aircraft
+strayer:aircraft
+tanker plane:aircraft
+trial balloon:aircraft
+warplane:aircraft
+whirlybird:aircraft

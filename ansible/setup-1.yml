@@ -1,0 +1,115 @@
+#
+# Copyright (c) Peter de Vocht, 2017
+#
+# All rights reserved. No part of this publication may be reproduced, distributed, or
+# transmitted in any form or by any means, including photocopying, recording, or other
+# electronic or mechanical methods, without the prior written permission of the publisher,
+# except in the case of brief quotations embodied in critical reviews and certain other
+# noncommercial uses permitted by copyright law.
+#
+# this is an Ansible KAI Server setup script
+# make sure you install Ansible first on your OS
+#
+
+###########################################################################################
+# NB:
+# (1) ssh-copy-id peter@dsvocht for the ROOT account on each installation server
+# (2) ssh-copy-id root@each_machine from the installation machine to use Ansible
+# (3) for cassandra cluster: each of the cluster names of each machine in the cluster
+#     needs to be proper ip resolvable, not 127.0.x.x otherwise Cassandra won't work
+# (4) run setup_for_ansbile.sh in the root to build all needed for the deployment
+###########################################################################################
+
+# --extra-vars "web_port=8080"
+
+---
+- hosts: kai-cluster-one
+  remote_user: root
+  vars:
+    file_base: /opt/kai
+    software_base: peter@dsvocht:/volume1/store/software
+    spacy: spacy.tgz
+
+    protocol: http
+    cert_name: kai
+
+    cassandra: apache-cassandra-3.10-bin.tar.gz
+    cassandra_dir: /opt/apache-cassandra-3.10
+    cassandra_cluster_name: KAI Cluster
+
+    # needed by cassandra
+    jdk_dir: /opt/jdk1.8.0_121
+    jdk: jdk-8u121-linux-x64.tar.gz
+
+    dev_base: /home/peter/dev/kai
+    web_port: 8080
+
+
+  tasks:
+
+# echo extra vars to make sure they're defined
+  - name: checking extra vars (--extra-vars "web_port=8080" on {{ inventory_hostname }}
+    shell: echo webserver port = {{ web_port }} on {{ inventory_hostname }}
+
+  - name: testing web_port != 443
+    fail: msg="Do not use web_port = 443, you need to forward from 443, e.g. to 8443"
+    when: web_port == "443"
+
+  - name: ping internal hostname is a proper ip address
+    shell: ping -n {{ inventory_hostname }} -c1 | grep PING
+    register: ping
+
+  - name: testing internal hostname is a proper ip address
+    fail: msg="you must set proper ip address for the hosts in /etc/hosts, instead found {{ ping.stdout }}"
+    when: '"(127.0." in ping.stdout'
+
+
+  - name: backup properties file {{file_base}}/data/properties.ini
+    stat: path={{file_base}}/data/properties.ini
+    register: properties_stat
+
+  - name: removing backups of properties.ini
+    file: path=/tmp/properties.ini state=absent
+    when: properties_stat.stat.exists == False
+
+  - name: Move properties.ini to /tmp/
+    command: mv {{file_base}}/data/properties.ini /tmp/properties.ini
+    when: properties_stat.stat.exists
+
+
+
+  - name: remove data folder {{file_base}}/data
+    file: path={{file_base}}/data state=absent
+
+  - name: remove kai executable {{file_base}}/bin/kai
+    file: path={{file_base}}/bin/kai state=absent
+
+  - include: parts/os.yml
+
+  - include: parts/os-software.yml
+
+  - include: parts/kai-folders.yml kai_base={{ file_base }}
+
+  - include: parts/spacy.yml soft_base={{ software_base }} spacy_file={{ spacy }} kai_base={{ file_base }}
+
+  - include: parts/jdk-install.yml jdk_file={{ jdk }} soft_base={{ software_base }} cass_dir={{ cassandra_dir }}
+
+  - include: parts/kai-bin.yml kai_base={{ file_base }}
+
+  - include: parts/kai-data.yml kai_base={{ file_base }}
+
+
+  - name: Backup new properties.ini
+    command: mv {{file_base}}/data/properties.ini {{file_base}}/data/properties-latest-version.ini
+    when: properties_stat.stat.exists
+
+  - name: Move properties.ini from /tmp/ to {{ file_base }}/data
+    command: mv /tmp/properties.ini {{file_base}}/data/properties.ini
+    when: properties_stat.stat.exists
+
+
+  - include: parts/cassandra.yml s_cassandra={{ cassandra }} s_software_base={{ software_base }} s_cassandra_dir={{ cassandra_dir }}
+
+  - include: parts/kai-folder-permissions.yml s_cassandra_dir={{ cassandra_dir }} s_jdk_dir={{ jdk_dir }}
+
+  - include: parts/systemctl.yml s_cassandra_dir={{ cassandra_dir }} s_jdk_dir={{ jdk_dir }}
