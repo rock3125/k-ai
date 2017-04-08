@@ -1,26 +1,41 @@
-edition_of,what be:v edition:n
-publication_date,when be:v publish:v [date:n]
-is_-_a,what be:v
-topic,what be:v topic:n
-kg_/_object___profile_/_prominent___type,what be:v type:n,what be:v profile:n
-recording,what be:v record:v
-release,what be:v release:n
-track,what be:v track:n
-length,what be:v length:n
-recorded_by,what recording:n do:v make:v,what do:v record:v
-author,who be: author:n,who write:v
-person,who find:v
-volume,what volume:n
-isbn,what be:v ISBN:n
-isbn_-_13,what be:v ISBN:n 13:cd
-city,what city:n be:v
-place_of_publication,where be:v publish:v,what be:v location:n publish:v
-closed,when be:v close:v
-status,what be:v status:n
-vote,what be:v vote:n
-source,what be:v source:n
-to,when do:v finish:n,when do:v end:n
-from,what be:v start:n,when do:v start:n
-court,what be:v court:n
-referee,what be:v outcome:n,what be:v match:n decision:n
-recording_of_composition,what be:v recording:n,what be:v composition:n
+
+// album recorded_by band
+what did %1 (record|write|compose) => %2 recorded_by %1
+what (albums|records|music) (did|do|does) %1 (record|write|compose|make) => %2 recorded_by %1
+what (composition|compositions|recording|recordings) did %1 make => %2 recorded_by %1
+recordings (by|of) %1 => %2 recorded_by %1
+who recorded %1 => %1 recorded_by %2
+how many recordings did %1 make => count(%2 recorded_by %1)
+did %1 (record|write|compose) %2 => exists(%2 recorded_by %1)
+
+// Milne author Winnie the Poo
+// author,who be: author:n,who write:v
+who (was|is) (the|) author of %1 => %1 author %2
+who (wrote|writes) %1 => %2 author %1
+
+
+// edition_of,what be:v edition:n
+// publication_date,when be:v publish:v [date:n]
+// is_-_a,what be:v
+// topic,what be:v topic:n
+// kg_/_object___profile_/_prominent___type,what be:v type:n,what be:v profile:n
+// recording,what be:v record:v
+// release,what be:v release:n
+// track,what be:v track:n
+// length,what be:v length:n
+// author,who be: author:n,who write:v
+// person,who find:v
+// volume,what volume:n
+// isbn,what be:v ISBN:n
+// isbn_-_13,what be:v ISBN:n 13:cd
+// city,what city:n be:v
+// place_of_publication,where be:v publish:v,what be:v location:n publish:v
+// closed,when be:v close:v
+// status,what be:v status:n
+// vote,what be:v vote:n
+// source,what be:v source:n
+// to,when do:v finish:n,when do:v end:n
+// from,what be:v start:n,when do:v start:n
+// court,what be:v court:n
+// referee,what be:v outcome:n,what be:v match:n decision:n
+// recording_of_composition,what be:v recording:n,what be:v composition:n

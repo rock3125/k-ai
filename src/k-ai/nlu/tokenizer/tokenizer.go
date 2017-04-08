@@ -124,6 +124,111 @@ func Tokenize(str string) []model.Token {
 }
 
 /**
+ * take a string apart into tokens with %1..n parameters
+ * @param str the string to take apart
+ * @return a list of tokens that makes the string
+ */
+func TokenizeWithParameter(str string) []model.Token {
+	tokenList := make([]model.Token,0)
+	if ( len(str) > 0 ) {
+		length := len(str)
+
+		for i := 0; i < length; {
+			tokenHandled := false
+
+			// whitespace scanner
+			ch := str[i:i+1]
+			for isWhiteSpace(ch) && i < length {
+				tokenHandled = true
+				i = i + 1
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+			if ( tokenHandled ) {
+				tokenList = append(tokenList, model.Token{Text: " "})
+			}
+
+			// add full-stops?
+			for isFullStop(ch) && i < length {
+				tokenHandled = true
+				tokenList = append(tokenList, model.Token{Text: "."})
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+
+			// add hyphens?
+			for isHyphen(ch) && i < length {
+				tokenHandled = true;
+				tokenList = append(tokenList, model.Token{Text: "-"})
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+
+			// add single quotes?
+			for isSingleQuote(ch) && i < length {
+				tokenHandled = true;
+				tokenList = append(tokenList, model.Token{Text: "'"})
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+
+			// add double quotes?
+			for isDoubleQuote(ch) && i < length {
+				tokenHandled = true;
+				tokenList = append(tokenList, model.Token{Text: "\""})
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+
+			// add special characters ( ) etc. but not %
+			for ch != "%" && isSpecialCharacter(ch) && i < length {
+				tokenHandled = true;
+				tokenList = append(tokenList, model.Token{Text: ch})
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+
+			// add punctuation ! ? etc.
+			for isPunctuation(ch) && i < length {
+				tokenHandled = true;
+				tokenList = append(tokenList, model.Token{Text: ch})
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+
+			// numeric processor
+			helper := ""
+			for IsNumeric(ch) && i < length {
+				tokenHandled = true;
+				helper += ch;
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+			if len(helper) > 0 {
+				tokenList = append(tokenList, model.Token{Text: helper})
+			}
+
+			// text processor
+			t_helper := ""
+			for (IsABC(ch) || ch == "%") && i < length {
+				tokenHandled = true;
+				t_helper += ch;
+				i = i + 1;
+				if ( i < length ) { ch = str[i:i+1] }
+			}
+			if len(t_helper) > 0 {
+				tokenList = append(tokenList, model.Token{Text: t_helper})
+			}
+
+			// discard unknown token?
+			if ( !tokenHandled ) {
+				i++; // skip
+			}
+		}
+	}
+	return handleContractions(tokenList)
+}
+
+/**
  * re-tokenize a spacey sentence because its tokenizer sucks - return null if there was no change
  * @param token a single token
  * @return a proper list of tokens
