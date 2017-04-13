@@ -2,6 +2,7 @@ from typing import List
 import spacy
 import json
 import os
+import logging
 
 #
 # Copyright (c) 2017 by Peter de Vocht
