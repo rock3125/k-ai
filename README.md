@@ -9,23 +9,15 @@ Now with Freebase Easy Query Integration.  Supports over 300,000,000 Q/A pairs.
 
 ```
 # install OS dependencies
-apt-get update
-apt-get install -y --no-install-recommends python3.5 python3-pip python3-dev python3-setuptools build-essential
-apt-get clean
+sudo apt update
+sudo apt install -y --no-install-recommends python3.5 python3-pip python3-dev python3-setuptools build-essential
+sudo apt clean
 rm -rf /var/lib/apt/lists/*
 
 # setup pip
-pip3 --no-cache-dir install gunicorn flask flask-cors flask-restplus gevent nltk numpy scipy spacy sputnik
-pip3 --upgrade pip
-
-# install the required spacy data files
-
-```
-> python3
-
-   import sputnik
-   import spacy
-   sputnik.install('spacy', spacy.about.__version__, 'en', data_path='/opt/spacy')
+sudo pip3 --upgrade pip
+sudo pip3 install -r spacy/requirements.txt
+sudo python3 -m spacy download en_core_web_sm
 ```
 
 # run spacy (must run for the Unit tests to succeed), runs on port 9000 by default
