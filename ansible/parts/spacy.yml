@@ -11,22 +11,8 @@
 #
 # external data files;  spacy
 #
-  - name: testing Spacy file existence
-    stat: path=/opt/spacy/en-1.1.0/meta.json
-    register: spacy_exists
-
   - name: download Spacy files
-    shell: scp {{ soft_base }}/{{ spacy_file }} /tmp/{{ spacy_file }}
-    when: spacy_exists.stat.exists == False
-
-  - name: extract Spacy files
-    unarchive: src=/tmp/{{ spacy_file }} dest=/opt/ copy=no
-    when: spacy_exists.stat.exists == False
-
-  - name: removing Spacy tgz download
-    file: path=/tmp/{{ spacy_file }} state=absent
-    when: spacy_exists.stat.exists == False
-
+    shell: python3 -m spacy download en_core_web_sm
 
 # copy spacy parser server files
 

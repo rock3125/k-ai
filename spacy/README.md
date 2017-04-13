@@ -6,15 +6,7 @@ A micro-service around the spaCy parser for KAI.
 See [requirements.txt](./requirements.txt) for this project's main requirements.
 To install spaCy's data first install sputnik:
 ```
-$ sudo pip3 install sputnik
-```
-then from the Python3 REPL or equivalent run:
-* NB. this will download ~1.3GB of data
-```
-import sputnik
-import spacy
-
-sputnik.install('spacy', spacy.about.__version__, 'en', data_path='/opt/spacy')
+`sudo python3 -m spacy download en_core_web_sm`
 ```
 
 ## Distribution build and installation

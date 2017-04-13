@@ -13,6 +13,12 @@ import os
 # noncommercial uses permitted by copyright law.
 #
 
+
+logging.info("loading spacy...")
+en_nlp = spacy.load('en_core_web_sm')
+logging.info("loading spacy done!")
+
+
 # sentence holder, this is what is returned
 class Token:
     def __init__(self, text, index, tag, dep, ancestor_list):
@@ -35,19 +41,6 @@ class JsonSystem(json.JSONEncoder):
 
 # the text parser
 class Parser:
-
-    def __init__(self):
-        # set spacey data path, where spacy files are installed
-        spacy_path = '/opt/spacy'
-        if not os.path.isfile(os.path.join(spacy_path, 'cookies.txt')):
-            spacy_path = '/opt/kai/spacy'
-
-        print("loading spacy from " + spacy_path)
-        spacy.util.set_data_path(spacy_path)
-
-        self.en_nlp = spacy.load('en')  # , create_make_doc=KAISpacyTokenizer)
-        print("loading spacy done!")
-
 
     # cleanup text to ASCII
     def cleanup_text(self, data) -> str:
@@ -80,7 +73,7 @@ class Parser:
 
     # convert a document to a set of entity tagged, pos tagged, and dependency parsed entities
     def parse_document(self, text) -> List[List[Token]]:
-        doc = self.en_nlp(text)
+        doc = en_nlp(text)
         sentence_list = []
         for sent in doc.sents:
             sentence = self.convert_sentence(sent)
